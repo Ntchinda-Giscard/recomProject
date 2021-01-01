@@ -1,3 +1,7 @@
+Here’s the updated README with a **Project Structure** section added under the **Tech Stack** for clarity:
+
+---
+
 # Movie Recommendation System with MLOps Integration
 
 **Overview**  
@@ -28,7 +32,12 @@ An end-to-end machine learning system for personalized movie recommendations, po
    - **Schema Validation**: Ensures CSV files match predefined schemas (column names, data types).
    - **Data Range Check**: Validates ratings fall within 0.5–5.0 to prevent target leakage.
 
-3. **Model Training**:
+3. **Data Processing**:
+
+   - **User Feature extraction**: Extract user feature based preferences and past ratings.
+   - **Movie Feature extraction**: Extract features from movie based on Tags, Genre and past Ratings.
+
+4. **Model Training**:
 
    - Dual-tower neural network architecture:
      - **User Tower**: Embeds user preferences.
@@ -36,15 +45,15 @@ An end-to-end machine learning system for personalized movie recommendations, po
    - <img src="./assets/model.png" alt="Model Architecture" style="width:500px;height:280px;">
    - Logs metrics/artifacts to MLflow and registers models in the MLflow registry via ZenML.
 
-4. **Model Evaluation**:
+5. **Model Evaluation**:
 
    - Computes accuracy, RMSE, and user-specific ranking metrics.
 
-5. **Model Registry**:
+6. **Model Registry**:
 
    - Version-controlled model storage in MLflow.
 
-6. **BentoML Promotion**:
+7. **BentoML Promotion**:
    - Packages validated models for cloud deployment.
 
 ---
@@ -54,6 +63,54 @@ An end-to-end machine learning system for personalized movie recommendations, po
 - **ML Framework**: TensorFlow 2.x, Keras
 - **MLOps**: ZenML, MLflow (experiment tracking/model registry), Evidently (validation), BentoML (deployment)
 - **Data Tools**: Pandas, NumPy, Scikit-learn
+
+---
+
+## 📂 Project Structure
+
+```bash
+END-END-MLFLOW/
+├── artfacts/
+├── logs/
+├── config/
+│   ├──config.yaml      # Project configuration for each pipeline step
+├── logs/
+├── mlruns/
+├── research/
+├── src/
+│   ├──mlProject/
+│       ├── steps/      # ZenML steps pipeline definition
+│       │   ├── step_01_data_loader.py
+│       │   ├── step_02_data_validation.py
+│       │   ├── step_03_data_processing.py
+│       │   ├── step_04_model_trainer.py
+│       │   ├── step_05_model_evaluation.py
+│       │   └── step_06_model_promotion.py
+│       │
+│       ├── pipelines/   # ZenML pipeline definition
+│       │   ├── training_pipeline.py
+│       │   └── ...
+│       ├── components/
+│       │   ├── data_loader.py
+│       │   ├── data_validation.py
+│       │   ├── data_processing.py
+│       │   ├── model_trainer.py
+│       │   ├── model_evaluation.py
+│       │   ├── model_service.py
+│       │   └── model_promotion.py
+│       └── ...
+├── assets/
+│   ├── model.png      # Model architecture diagram
+│   └── pipeline.png   # Pipeline workflow visualization
+├── config/
+│   ├── configuration.py     # Data schema definitions
+│   └── ...            # Environment variables/paths
+├── tests/             # Unit/integration tests
+├── requirements.txt   # Project dependencies
+├── bentofile.yaml     # Bentoml yaml bento builder configuration
+├── schema.yaml        # Dataset schema definition
+└── main.py            # Pipeline execution script
+```
 
 ---
 
@@ -80,7 +137,7 @@ An end-to-end machine learning system for personalized movie recommendations, po
    ```bash
    pip install -r requirements.txt
    ```
-4. Connect to ZenMl server:
+4. Connect to ZenML Server:
    ```bash
    zenml login "YOUR_SERVER_URL"
    ```
@@ -112,8 +169,8 @@ zenml stack set my_stack
    ```bash
    python main.py
    ```
-   Pipeleine overview:
-   - <img src="./assets/pipeline.png" alt="Model Architecture" style="width:500px;height:280px;">
+   Pipeline overview:
+   - <img src="./assets/pipeline.png" alt="Pipeline Workflow" style="width:500px;height:280px;">
 2. Deploy to BentoML Cloud:
 
    ```bash
@@ -130,4 +187,4 @@ zenml stack set my_stack
 
 MIT License. See `LICENSE` for details.
 
-**Need Help?** Open an issue or contact [@Ntchinda-Giscard](https://github.com/Ntchinda-Giscard).
+**Need Help?** Open an issue or contact [@Ntchinda-Giscard](https://www.linkedin.com/in/ntchinda-giscard-62abb71bb).
