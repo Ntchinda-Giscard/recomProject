@@ -15,4 +15,12 @@ Flask-Cors
 fastapi
 uvicorn
 zenml[server]
+tensorflow
+keras
+catboost
+lightgbm
+markupsafe
+xgboost
+streamlit
+
 -e .

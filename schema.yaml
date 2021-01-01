@@ -9,4 +9,4 @@ COLUMNS:
   vote_count: int64
 
 TARGET_COLUMN:
-  vote_average: float64
+  name: vote_average

@@ -7,9 +7,16 @@ src/END_TO_END_MLFLOW_PROJECT.egg-info/dependency_links.txt
 src/END_TO_END_MLFLOW_PROJECT.egg-info/top_level.txt
 src/mlProject/__init__.py
 src/mlProject/components/__init__.py
+src/mlProject/components/data_ingestion.py
+src/mlProject/components/data_transformation.py
+src/mlProject/components/data_validation.py
 src/mlProject/config/__init__.py
 src/mlProject/config/configuration.py
 src/mlProject/constants/__init__.py
 src/mlProject/pipeline/__init__.py
+src/mlProject/pipeline/stage_01_data_ingestion.py
+src/mlProject/pipeline/stage_02_data_validation.py
+src/mlProject/pipeline/stage_03_data_transformation.py
 src/mlProject/utils/__init__.py
 src/mlProject/utils/common.py
+src/mlProject/utils/common.test.py

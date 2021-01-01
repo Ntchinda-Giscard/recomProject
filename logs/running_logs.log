@@ -30,3 +30,85 @@
 [2021-01-01 02:15:12,142: INFO: 3665554176: Data splitted into test and training set]
 [2021-01-01 02:15:12,147: INFO: 3665554176: (7500, 9)]
 [2021-01-01 02:15:12,172: INFO: 3665554176: (2500, 9)]
+[2024-08-16 04:03:17,725: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-16 04:03:17,731: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-16 04:03:17,759: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-16 04:03:17,764: INFO: common: Created directory at: artifacts]
+[2024-08-16 04:03:17,765: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-16 04:03:25,686: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-16 04:03:25,690: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-16 04:03:25,698: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-16 04:03:25,699: INFO: common: Created directory at: artifacts]
+[2024-08-16 04:03:25,700: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-16 04:03:26,744: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-16 04:03:26,745: INFO: data_transformation: (7500, 9)]
+[2024-08-16 04:03:26,746: INFO: data_transformation: (2500, 9)]
+[2024-08-16 04:03:26,764: INFO: main: >>>>> Stage Data ingestion has started <<<<<]
+[2024-08-16 04:03:26,875: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-16 04:03:26,883: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-16 04:03:26,903: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-16 04:03:26,907: INFO: common: Created directory at: artifacts]
+[2024-08-16 04:03:26,909: INFO: common: Created directory at: artifacts/data_ingestion]
+[2024-08-16 04:03:28,013: ERROR: main: HTTP Error 400: Bad Request]
+Traceback (most recent call last):
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/pipeline/stage_01_data_ingestion.py", line 20, in main
+    data_ingestion.download_file()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/components/data_ingestion.py", line 31, in download_file
+    _, headers = request.urlretrieve(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2021-01-01 02:40:18,628: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:40:18,654: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:40:18,681: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:40:18,687: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:40:18,700: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:41:04,784: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:41:04,798: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:41:04,824: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:41:04,834: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:41:04,848: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:42:45,789: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:42:45,848: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:42:45,869: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:42:45,878: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:42:45,889: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:44:21,814: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:44:21,824: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:44:21,839: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:44:21,844: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:44:21,848: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:47:05,922: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:47:05,948: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:47:05,973: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:47:05,986: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:47:05,995: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:49:08,421: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:49:08,432: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:49:08,451: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:49:08,455: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:49:08,462: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:49:50,384: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:49:50,396: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:49:50,411: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:49:50,418: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:49:50,424: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 02:50:07,547: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:50:07,557: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:50:07,577: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:50:07,586: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:50:07,591: INFO: common: Created directory at: artifacts/model_trainer]
