@@ -7,8 +7,9 @@ from typing import Tuple
 import pandas as pd
 from mlProject.base import FeatureExtractor
 from mlProject.config.configuration import ConfigurationManager
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.feature_extraction.text import TfidfVectorizer
 from pathlib import Path
 
 
@@ -29,51 +30,31 @@ class MovieFeatureExtractor(FeatureExtractor):
             Generates features from movie and tag data and returns them as a pandas DataFrame.
     """
 
-    def load_dataset(self, file_path: Path) -> pd.DataFrame:
-        """
-        Loads a dataset from a given file path and returns it as a pandas DataFrame.
-
-        Args:
-            file_path (Path): The path to the dataset file.
-
-        Returns:
-            pd.DataFrame: The loaded dataset as a pandas DataFrame.
-        """
-        return pd.read_csv(file_path)
-
-    def generate_features(self, config: DataProcessingConfig) -> pd.DataFrame:
-        """
-        Generates features from movie and tag data and returns them as a pandas DataFrame.
-
-        Args:
-            movies_path (Path): The path to the movies dataset file.
-            tags_path (Path): The path to the tags dataset file.
-
-        Returns:
-            pd.DataFrame: The generated features as a pandas DataFrame.
-        """
-        movies = self.load_dataset(config.movies)
-        tags = self.load_dataset(config.tags)
-        movies['genres'] = movies['genres'].str.split('|')
-        genre_set = set(genre for genres in movies['genres'] for genre in genres)
-
-        for genre in genre_set:
-            movies[genre] = movies['genres'].apply(lambda x: int(genre in x))
-
-        tags_aggregated = tags.groupby('movieId')['tag'].apply(lambda x: ' '.join(x)).reset_index()
-
-        movies_features = movies.merge(tags_aggregated, on='movieId', how='left')
-        movies_features['tag'] = movies_features['tag'].fillna('')
-
-        tfidf = TfidfVectorizer(max_features=50)
-        tfidf_features = tfidf.fit_transform(movies_features['tag']).toarray()
-
-        tfidf_df = pd.DataFrame(tfidf_features, columns=[f'tag_{i}' for i in range(tfidf_features.shape[1])])
-        movies_features = pd.concat([movies_features.reset_index(drop=True), tfidf_df], axis=1)
-
-        movies_features = movies_features.drop(['genres', 'title', 'tag'], axis=1)
-
-        return movies_features
+    def generate_features(self, movies_df : pd.DataFrame, tags_df: pd.DataFrame) -> np.ndarray:
+        genres = movies_df['genres'].str.get_dummies('|')
+    
+        # Extract year
+        movies_df['year'] = movies_df['title'].str.extract('(\d{4})', expand=False)
+        movies_df['year'] = pd.to_numeric(movies_df['year'], errors='coerce')
+        year_normalized = StandardScaler().fit_transform(movies_df[['year']].fillna(movies_df['year'].mean()))
+        
+        # Tag features
+        movie_tags = tags_df.groupby('movieId')['tag'].agg(lambda x: ' '.join(x)).reset_index()
+        movie_tags = movies_df[['movieId']].merge(movie_tags, on='movieId', how='left')
+        movie_tags['tag'] = movie_tags['tag'].fillna('')
+        
+        # Reduce TF-IDF features for the sample
+        tfidf = TfidfVectorizer(max_features=50, stop_words='english')
+        tag_features = tfidf.fit_transform(movie_tags['tag']).toarray()
+        
+        # Combine all features
+        movie_features = np.hstack([
+            genres.values,
+            year_normalized,
+            tag_features
+        ])
+        
+        return movie_features
 
 
 class UserFeatureExtractor(FeatureExtractor):
@@ -87,76 +68,124 @@ class UserFeatureExtractor(FeatureExtractor):
         generate_features: Generates user features based on ratings and movies data.
 
     """
-    def load_dataset(self, file_path: Path) -> pd.DataFrame:
-        return pd.read_csv(file_path)
-
-    def generate_features(self, config: DataProcessingConfig) -> pd.DataFrame:
-        """
-        Generates user features based on ratings and movies data.
-
-        Args:
-            ratings (pd.DataFrame): DataFrame containing user ratings data.
-            movies (pd.DataFrame): DataFrame containing movies data.
-
-        Returns:
-            pd.DataFrame: DataFrame containing user features.
-            :param config:
-
-        """
-        ratings = self.load_dataset(config.ratings)
-        movies = self.load_dataset(config.movies)
-        user_ratings = ratings.groupby('userId')['rating'].agg(['mean', 'count']).reset_index()
-        user_ratings.rename(columns={'mean': 'avg_rating', 'count': 'rating_count'}, inplace=True)
-
-        user_genres = ratings.merge(movies[['movieId', 'genres']], on='movieId', how='left')
-
-        user_genres['genres'] = user_genres['genres'].fillna('').str.split('|')
-        genre_set = set(genre for genres in user_genres['genres'] for genre in genres)
+    def calculate_user_genre_ratings(self, ratings_df, movies_df):
+        # Create genre columns
+        genres = movies_df['genres'].str.get_dummies('|')
+        movies_with_genres = pd.concat([movies_df[['movieId']], genres], axis=1)
         
-        for genre in genre_set:
-            user_genres[genre] = user_genres['genres'].apply(lambda x: int(genre in x))
+        # Merge ratings with movies and genres
+        ratings_with_genres = ratings_df.merge(movies_with_genres, on='movieId')
+        
+        # Calculate average rating per genre per user
+        genre_columns = genres.columns
+        user_genre_ratings = []
+        
+        for user_id in ratings_with_genres['userId'].unique():
+            user_ratings = ratings_with_genres[ratings_with_genres['userId'] == user_id]
+            genre_avgs = {}
+            genre_avgs['userId'] = user_id
+            
+            for genre in genre_columns:
+                genre_movies = user_ratings[user_ratings[genre] == 1]
+                genre_avgs[f'{genre}_avg_rating'] = genre_movies['rating'].mean() if len(genre_movies) > 0 else 0
+                
+            user_genre_ratings.append(genre_avgs)
+        
+        return pd.DataFrame(user_genre_ratings)
 
-        user_genre_preferences = user_genres.groupby('userId')[list(genre_set)].mean().reset_index()
-
-        user_features = user_ratings.merge(user_genre_preferences, on='userId', how='left')
-
-        return user_genres
-
+    def generate_features(self, ratings_df: pd.DataFrame, movies_df: pd.DataFrame, tags_df: pd.DataFrame) -> pd.DataFrame:
+        # Basic user statistics
+        rating_stats = ratings_df.groupby('userId').agg({
+            'rating': ['mean', 'std', 'count']
+        }).fillna(0)
+        rating_stats.columns = ['avg_rating', 'std_rating', 'rating_count']
+        rating_stats = rating_stats.reset_index()
+        
+        # Tag statistics
+        tag_stats = tags_df.groupby('userId').agg({
+            'tag': 'count'
+        }).reset_index()
+        tag_stats.columns = ['userId', 'tag_count']
+        
+        # Genre rating averages
+        genre_ratings = self.calculate_user_genre_ratings(ratings_df, movies_df)
+        
+        # Combine all user features
+        user_features = rating_stats.merge(tag_stats, on='userId', how='left')
+        user_features = user_features.merge(genre_ratings, on='userId', how='left')
+        user_features = user_features.fillna(0)
+        
+        # Save user IDs before normalization
+        user_ids = user_features['userId']
+        
+        # Standardize all features
+        feature_columns = [col for col in user_features.columns if col != 'userId']
+        user_features_normalized = StandardScaler().fit_transform(user_features[feature_columns])
+        
+        return user_features_normalized, user_features
 
 class DataPreprocessor:
-    def __init__(self, config: DataProcessingConfig ) -> None:
+    
+    def __init__(self, config: DataProcessingConfig) -> None:
         self.movie_feature_extractor = MovieFeatureExtractor()
         self.user_feature_extractor = UserFeatureExtractor()
         self.config = config
+        self.movies_df = pd.read_csv(self.config.movies)
+        self.ratings_df = pd.read_csv(self.config.ratings)
+        self.tags_df = pd.read_csv(self.config.tags)
+
+        # Select 5 users who have rated the most movies
+        self.top_5_users = self.ratings_df['userId'].value_counts().head(50).index
+        self.ratings_df = self.ratings_df[self.ratings_df['userId'].isin(self.top_5_users)]
+
+        # Filter movies and tags to only include those related to these users
+        self.relevant_movies = self.ratings_df['movieId'].unique()
+        self.movies_df = self.movies_df[self.movies_df['movieId'].isin(self.relevant_movies)]
+        self.tags_df = self.tags_df[self.tags_df['userId'].isin(self.top_5_users)]
     
-    def load_dataset(self, file_path: Path) -> pd.DataFrame:
-        return pd.read_csv(file_path)
+    def prepare_training_data(self, ratings_df, movie_features, user_features):
+        user_encoder = LabelEncoder()
+        movie_encoder = LabelEncoder()
+        
+        ratings_df['user_encoded'] = user_encoder.fit_transform(self.ratings_df['userId'])
+        ratings_df['movie_encoded'] = movie_encoder.fit_transform(self.ratings_df['movieId'])
+        
+        X_user = user_features[ratings_df['user_encoded']]
+        X_movie = movie_features[ratings_df['movie_encoded']]
+        y = ratings_df['rating'].values
+        
+        return X_user, X_movie, y, user_encoder, movie_encoder
     
     def process_data(self) -> pd.DataFrame:
-        ratings_df = self.load_dataset(self.config.ratings)
+
         logger.info(f"Extracting \033[36mMovies features...⏳\033[0m")
-        movies_features = self.movie_feature_extractor.generate_features(self.config)
+        movie_features = self.movie_feature_extractor.generate_features(self.movies_df, self.tags_df)
         logger.info(f"Extracting \033[36mMovies features\033[0m \033[34mcompleted\033[0m ✅ ")
         logger.info(f"Extracting \033[36mUser features...⏳\033[0m")
-        users_feature = self.user_feature_extractor.generate_features(self.config)
+        user_features, user_features_df = self.user_feature_extractor.generate_features(self.ratings_df, self.movies_df, self.tags_df)
         logger.info(f"Extracting \033[36mUser features\033[0m \033[34mcompleted\033[0m ✅")
         logger.info(f"Merging features with \033[36mratings...⏳\033[0m")
-        ratings_with_users = ratings_df.merge(users_feature, on='userId', how='left')
-        final_dataset = ratings_with_users.merge(movies_features, on='userId', how='left')
+        X_user, X_movie, y, _, _ = self.prepare_training_data(self.ratings_df, movie_features, user_features)
         logger.info(f"Merging features with ratings \033[34mcompleted\033[0m ✅")
-        logger.info(f"Final dataset: {final_dataset.head()}")
 
         return final_dataset
 
-    def train_test_spliting(self, dataset: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-        X = dataset.drop(['rating', 'userId', 'movieId'], axis=1)
-        y = dataset['rating']
+    def train_validation_split(self, X_user, X_movie, y) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+        train_size = 0.8
+        indices = np.arange(len(y))
         logger.info(f"Spliting \033[36mfinal dataset features...⏳\033[0m")
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        logger.info(f"Training set size: {X_train.shape}")
-        logger.info(f"Testing set size: {X_test.shape}")
+        train_indices, val_indices = train_test_split(indices, train_size=train_size, random_state=42)
+        train_user_features = X_user[train_indices]
+        train_movie_features = X_movie[train_indices]
+        train_ratings = y[train_indices]
+
+        val_user_features = X_user[val_indices]
+        val_movie_features = X_movie[val_indices]
+        val_ratings = y[val_indices]
+        logger.info(f"Training set size: y_train = {train_ratings}, X_train_user = {train_user_features.shape}, X_train_movie = {train_movie_features.shape}")
+        logger.info(f"Validation set size: y_val = {val_ratings}, X_val_user = {val_user_features.shape}, X_val_movie = {val_movie_features.shape}")
         logger.info(f"Spliting \033[36mfinal dataset\033[0m \033[34mcompleted\033[0m ✅")
 
-        return X_train, X_test, y_train, y_test
+        return train_user_features, train_movie_features, train_ratings, val_user_features, val_movie_features, val_ratings
 
 

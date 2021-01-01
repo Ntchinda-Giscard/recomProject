@@ -2334,3 +2334,510 @@ AttributeError: 'DataPreprocessor' object has no attribute 'extract_features'
 [2025-01-16 15:23:37,615: INFO: 3628626727: Extracting User features...⏳]
 [2025-01-16 15:23:44,919: INFO: 3628626727: Extracting User features completed ✅]
 [2025-01-16 15:23:44,922: INFO: 3628626727: Merging features with ratings...⏳]
+[2025-01-17 22:24:48,739: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:24:48,754: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:24:48,785: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:24:48,798: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:24:48,806: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:25:09,767: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:25:09,785: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:25:09,813: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:25:09,827: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:25:09,834: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:40:06,904: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:40:06,915: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:40:06,939: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:40:06,947: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:40:06,956: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:40:07,580: INFO: 3404344994: Extracting Movies features...⏳]
+[2025-01-17 22:40:11,225: INFO: 3404344994: Extracting Movies features completed ✅ ]
+[2025-01-17 22:40:37,241: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:40:37,256: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:40:37,285: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:40:37,296: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:40:37,307: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:40:37,760: INFO: 942801437: Extracting Movies features...⏳]
+[2025-01-17 22:40:41,021: INFO: 942801437: Extracting Movies features completed ✅ ]
+[2025-01-17 22:41:41,397: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:41:41,421: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:41:41,463: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:41:41,482: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:41:41,491: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:41:41,829: INFO: 134838535: Extracting Movies features...⏳]
+[2025-01-17 22:41:43,676: INFO: 134838535: Extracting Movies features completed ✅ ]
+[2025-01-17 22:41:43,681: INFO: 134838535: Extracting User features...⏳]
+[2025-01-17 22:41:43,969: ERROR: 1600142815: Oops😟! An error occured: name 'ratings_df' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1600142815.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/134838535.py", line 20, in process_data
+    users_feature = self.user_feature_extractor.generate_features(self.config.ratings, self.config.movies)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/3163622500.py", line 30, in generate_features
+    ratings = ratings[ratings_df['userId'].isin(selected_users)]
+NameError: name 'ratings_df' is not defined. Did you mean: 'ratings'?
+[2025-01-17 22:42:36,509: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:42:36,534: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:42:36,590: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:42:36,602: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:42:36,623: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:42:37,071: INFO: 134838535: Extracting Movies features...⏳]
+[2025-01-17 22:42:39,886: INFO: 134838535: Extracting Movies features completed ✅ ]
+[2025-01-17 22:42:39,889: INFO: 134838535: Extracting User features...⏳]
+[2025-01-17 22:42:40,274: INFO: 134838535: Extracting User features completed ✅]
+[2025-01-17 22:45:25,004: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:45:25,016: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:45:25,050: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:45:25,065: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:45:25,077: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:45:25,877: INFO: 3261440741: Extracting Movies features...⏳]
+[2025-01-17 22:45:29,435: INFO: 3261440741: Extracting Movies features completed ✅ ]
+[2025-01-17 22:45:29,449: INFO: 3261440741: Extracting User features...⏳]
+[2025-01-17 22:45:38,007: INFO: 3261440741: Extracting User features completed ✅]
+[2025-01-17 22:46:08,840: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:46:08,852: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:46:08,888: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:46:08,899: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:46:08,910: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:46:09,430: INFO: 3261440741: Extracting Movies features...⏳]
+[2025-01-17 22:46:11,964: INFO: 3261440741: Extracting Movies features completed ✅ ]
+[2025-01-17 22:46:11,975: INFO: 3261440741: Extracting User features...⏳]
+[2025-01-17 22:46:12,566: INFO: 3261440741: Extracting User features completed ✅]
+[2025-01-17 22:48:51,080: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:48:51,097: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:48:51,136: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:48:51,148: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:48:51,159: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:48:51,704: INFO: 498584896: Extracting Movies features...⏳]
+[2025-01-17 22:48:53,842: INFO: 498584896: Extracting Movies features completed ✅ ]
+[2025-01-17 22:48:53,858: INFO: 498584896: Extracting User features...⏳]
+[2025-01-17 22:48:54,553: INFO: 498584896: Extracting User features completed ✅]
+[2025-01-17 22:48:54,580: INFO: 498584896: Merging features with ratings...⏳]
+[2025-01-17 22:48:55,093: INFO: 498584896: Merging features with ratings completed ✅]
+[2025-01-17 22:49:20,673: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:49:20,683: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:49:20,713: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:49:20,719: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:49:20,728: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:49:21,185: INFO: 377384590: Extracting Movies features...⏳]
+[2025-01-17 22:49:22,708: INFO: 377384590: Extracting Movies features completed ✅ ]
+[2025-01-17 22:49:22,720: INFO: 377384590: Extracting User features...⏳]
+[2025-01-17 22:49:24,590: INFO: 377384590: Extracting User features completed ✅]
+[2025-01-17 22:49:24,616: INFO: 377384590: Merging features with ratings...⏳]
+[2025-01-17 22:49:25,333: INFO: 377384590: Merging features with ratings completed ✅]
+[2025-01-17 22:50:09,441: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:50:09,464: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:50:09,492: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:50:09,507: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:50:09,520: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:50:10,074: INFO: 777335254: Extracting Movies features...⏳]
+[2025-01-17 22:50:12,222: INFO: 777335254: Extracting Movies features completed ✅ ]
+[2025-01-17 22:50:12,225: INFO: 777335254: Extracting User features...⏳]
+[2025-01-17 22:50:12,720: INFO: 777335254: Extracting User features completed ✅]
+[2025-01-17 22:50:12,727: INFO: 777335254: Merging features with ratings...⏳]
+[2025-01-17 22:50:13,269: ERROR: 1600142815: Oops😟! An error occured: 'userId' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1600142815.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/777335254.py", line 24, in process_data
+    final_dataset = ratings_with_users.merge(movies_featues, on='userId', how='left')
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/frame.py", line 10832, in merge
+    return merge(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 170, in merge
+    op = _MergeOperation(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 794, in __init__
+    ) = self._get_merge_keys()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 1297, in _get_merge_keys
+    right_keys.append(right._get_label_or_level_values(rk))
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'userId'
+[2025-01-17 22:51:24,333: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:51:24,347: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:51:24,384: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:51:24,395: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:51:24,404: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:51:24,744: INFO: 2826020815: Extracting Movies features...⏳]
+[2025-01-17 22:51:27,064: INFO: 2826020815: Extracting Movies features completed ✅ ]
+[2025-01-17 22:51:27,073: INFO: 2826020815: Extracting User features...⏳]
+[2025-01-17 22:51:27,591: INFO: 2826020815: Extracting User features completed ✅]
+[2025-01-17 22:51:27,595: INFO: 2826020815: Merging features with ratings...⏳]
+[2025-01-17 22:51:28,205: ERROR: 1600142815: Oops😟! An error occured: 'movieId' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1600142815.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/2826020815.py", line 24, in process_data
+    final_dataset = ratings_with_users.merge(movies_featues, on='movieId', how='left')
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/frame.py", line 10832, in merge
+    return merge(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 170, in merge
+    op = _MergeOperation(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 794, in __init__
+    ) = self._get_merge_keys()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 1310, in _get_merge_keys
+    left_keys.append(left._get_label_or_level_values(lk))
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'movieId'
+[2025-01-17 22:53:21,700: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:53:21,745: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:53:21,762: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:53:21,768: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:53:21,777: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:53:22,173: INFO: 826108816: Extracting Movies features...⏳]
+[2025-01-17 22:53:24,146: INFO: 826108816: Extracting Movies features completed ✅ ]
+[2025-01-17 22:53:24,151: INFO: 826108816: Extracting User features...⏳]
+[2025-01-17 22:53:24,586: INFO: 826108816: Extracting User features completed ✅]
+[2025-01-17 22:53:24,589: INFO: 826108816: Merging features with ratings...⏳]
+[2025-01-17 22:53:24,979: INFO: 826108816: Merging features with ratings completed ✅]
+[2025-01-17 22:53:46,721: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:53:46,737: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:53:46,764: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:53:46,769: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:53:46,777: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:53:47,220: INFO: 3323777661: Extracting Movies features...⏳]
+[2025-01-17 22:53:48,491: INFO: 3323777661: Extracting Movies features completed ✅ ]
+[2025-01-17 22:53:48,498: INFO: 3323777661: Extracting User features...⏳]
+[2025-01-17 22:53:49,337: INFO: 3323777661: Extracting User features completed ✅]
+[2025-01-17 22:53:49,353: INFO: 3323777661: Merging features with ratings...⏳]
+[2025-01-17 22:53:50,396: INFO: 3323777661: Merging features with ratings completed ✅]
+[2025-01-17 22:59:10,298: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 22:59:10,335: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 22:59:10,369: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 22:59:10,375: INFO: common: Created directory at: artifacts]
+[2025-01-17 22:59:10,381: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 22:59:10,723: INFO: 1394622970: Extracting🛠 User features...⏳]
+[2025-01-17 22:59:11,914: INFO: 1394622970: Extracting🛠 User features completed ✅]
+[2025-01-17 23:01:40,570: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:01:40,579: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:01:40,597: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:01:40,605: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:01:40,625: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:01:40,982: INFO: 4181213172: Extracting🛠 User features...⏳]
+[2025-01-17 23:01:41,766: INFO: 4181213172: Extracting🛠 User features completed ✅]
+[2025-01-17 23:02:13,716: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:02:13,748: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:02:13,819: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:02:13,835: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:02:13,842: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:02:14,250: INFO: 827309846: Extracting🛠 User features...⏳]
+[2025-01-17 23:02:15,499: INFO: 827309846: Extracting🛠 User features completed ✅]
+[2025-01-17 23:33:49,575: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:33:49,608: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:33:49,655: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:33:49,676: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:33:49,687: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:33:50,082: INFO: 1833480112: Extracting🛠 User features...⏳]
+[2025-01-17 23:33:50,557: ERROR: 1600142815: Oops😟! An error occured: "['movieId, ratings, timestamp'] not found in axis" ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1600142815.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1833480112.py", line 21, in process_data
+    users_feature = users_feature.drop(columns=['movieId, ratings, timestamp'])
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/frame.py", line 5581, in drop
+    return super().drop(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 4788, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 4830, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 7070, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: "['movieId, ratings, timestamp'] not found in axis"
+[2025-01-17 23:34:30,006: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:34:30,020: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:34:30,054: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:34:30,067: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:34:30,077: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:34:30,451: INFO: 1504234739: Extracting🛠 User features...⏳]
+[2025-01-17 23:34:30,960: INFO: 1504234739: Extracting🛠 User features completed ✅]
+[2025-01-17 23:35:19,598: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:35:19,618: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:35:19,681: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:35:19,698: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:35:19,720: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:35:20,459: INFO: 3075261548: Extracting🛠 User features...⏳]
+[2025-01-17 23:35:22,190: INFO: 3075261548: Extracting🛠 User features completed ✅]
+[2025-01-17 23:36:13,979: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:36:13,994: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:36:14,091: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:36:14,117: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:36:14,144: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:36:14,787: INFO: 3156062482: Extracting User features...⏳]
+[2025-01-17 23:36:15,653: INFO: 3156062482: Extracting User features completed ✅]
+[2025-01-17 23:36:38,642: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:36:38,656: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:36:38,685: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:36:38,696: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:36:38,705: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:36:39,123: INFO: 1383752253: Extracting User features...⏳]
+[2025-01-17 23:36:40,371: INFO: 1383752253: Extracting User features completed ✅]
+[2025-01-17 23:39:47,027: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:39:47,050: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:39:47,075: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:39:47,084: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:39:47,092: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:39:47,562: INFO: 4220204011: Extracting User features...⏳]
+[2025-01-17 23:39:48,953: INFO: 4220204011: Extracting User features completed ✅]
+[2025-01-17 23:41:34,843: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:41:34,853: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:41:34,880: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:41:34,887: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:41:34,912: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:41:35,410: INFO: 3821550963: Extracting User features...⏳]
+[2025-01-17 23:41:36,657: INFO: 3821550963: Extracting User features completed ✅]
+[2025-01-17 23:41:37,801: ERROR: 1600142815: Oops😟! An error occured: name 'movies_featues' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1600142815.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/3821550963.py", line 25, in process_data
+    final_dataset = ratings_with_users.merge(movies_featues, on='movieId', how='left')
+NameError: name 'movies_featues' is not defined
+[2025-01-17 23:41:57,289: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:41:57,306: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:41:57,340: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:41:57,346: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:41:57,356: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:41:57,793: INFO: 833951246: Extracting Movies features...⏳]
+[2025-01-17 23:41:59,440: INFO: 833951246: Extracting Movies features completed ✅ ]
+[2025-01-17 23:41:59,448: INFO: 833951246: Extracting User features...⏳]
+[2025-01-17 23:41:59,957: INFO: 833951246: Extracting User features completed ✅]
+[2025-01-17 23:42:23,885: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-17 23:42:23,905: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-17 23:42:23,924: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-17 23:42:23,930: INFO: common: Created directory at: artifacts]
+[2025-01-17 23:42:23,941: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-17 23:42:24,310: INFO: 684594514: Extracting Movies features...⏳]
+[2025-01-17 23:42:26,771: INFO: 684594514: Extracting Movies features completed ✅ ]
+[2025-01-17 23:42:26,784: INFO: 684594514: Extracting User features...⏳]
+[2025-01-17 23:42:27,245: INFO: 684594514: Extracting User features completed ✅]
+[2025-01-18 01:16:55,082: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:16:55,133: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:16:55,261: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:16:55,328: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:16:55,349: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 01:29:23,878: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:29:23,922: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:29:23,943: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:29:23,950: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:29:23,955: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 01:32:15,188: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:32:15,195: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:32:15,218: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:32:15,231: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:32:15,239: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 01:33:49,141: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:33:49,165: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:33:49,197: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:33:49,209: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:33:49,237: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 01:37:35,822: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:37:35,833: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:37:35,884: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:37:35,897: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:37:35,911: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 01:40:16,097: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:40:16,148: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:40:16,184: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:40:16,196: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:40:16,207: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 01:43:58,243: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 01:43:58,271: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 01:43:58,379: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 01:43:58,410: INFO: common: Created directory at: artifacts]
+[2025-01-18 01:43:58,419: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 09:03:06,523: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 09:03:06,536: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 09:03:06,559: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 09:03:06,566: INFO: common: Created directory at: artifacts]
+[2025-01-18 09:03:06,576: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 09:03:07,008: INFO: 1319214188: Extracting User features...⏳]
+[2025-01-18 09:03:08,613: INFO: 1319214188: Extracting User features completed ✅]
+[2025-01-18 09:03:08,622: ERROR: 3032358064: Oops😟! An error occured: name 'final_dataset' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/3032358064.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_29511/1319214188.py", line 28, in process_data
+    return final_dataset
+NameError: name 'final_dataset' is not defined
+[2025-01-18 09:03:54,702: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 09:03:54,714: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 09:03:54,739: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 09:03:54,745: INFO: common: Created directory at: artifacts]
+[2025-01-18 09:03:54,758: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 09:03:55,612: INFO: 2103335834: Extracting User features...⏳]
+[2025-01-18 09:03:56,587: INFO: 2103335834: Extracting User features completed ✅]
+[2025-01-18 09:29:14,001: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 09:29:14,154: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 09:29:14,210: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 09:29:14,263: INFO: common: Created directory at: artifacts]
+[2025-01-18 09:29:14,327: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 11:56:18,795: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 11:56:18,847: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 11:56:18,876: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 11:56:18,884: INFO: common: Created directory at: artifacts]
+[2025-01-18 11:56:18,929: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 11:56:19,990: INFO: 919599276: Extracting Movies features...⏳]
+[2025-01-18 11:56:22,306: INFO: 919599276: Extracting Movies features completed ✅ ]
+[2025-01-18 11:57:27,254: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 11:57:27,272: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 11:57:27,299: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 11:57:27,317: INFO: common: Created directory at: artifacts]
+[2025-01-18 11:57:27,330: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 11:57:28,290: INFO: 919599276: Extracting Movies features...⏳]
+[2025-01-18 11:57:29,735: INFO: 919599276: Extracting Movies features completed ✅ ]
+[2025-01-18 12:00:26,186: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-18 12:00:26,196: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-18 12:00:26,222: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-18 12:00:26,235: INFO: common: Created directory at: artifacts]
+[2025-01-18 12:00:26,244: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-18 12:00:27,125: INFO: 3695093027: Extracting Movies features...⏳]
+[2025-01-18 12:00:29,573: INFO: 3695093027: Extracting Movies features completed ✅ ]
+[2025-01-18 12:00:29,590: INFO: 3695093027: Extracting User features...⏳]
+[2025-01-18 12:00:38,282: INFO: 3695093027: Extracting User features completed ✅]
+[2021-01-01 02:58:52,851: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:58:52,866: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:58:52,889: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:58:52,897: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:58:52,903: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 02:58:52,909: ERROR: 2344073496: Oops😟! An error occured: name 'MovieFeatureExtractor' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2344073496.py", line 4, in <module>
+    data_preprocessor = CSVDataPreprocessor(config=get_data_processing_config)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/3695093027.py", line 5, in __init__
+    self.movie_feature_extractor = MovieFeatureExtractor()
+NameError: name 'MovieFeatureExtractor' is not defined. Did you mean: 'FeatureExtractor'?
+[2021-01-01 02:59:49,666: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 02:59:49,684: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 02:59:49,712: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 02:59:49,721: INFO: common: Created directory at: artifacts]
+[2021-01-01 02:59:49,732: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 02:59:49,737: ERROR: 2344073496: Oops😟! An error occured: name 'UserFeatureExtractor' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2344073496.py", line 4, in <module>
+    data_preprocessor = CSVDataPreprocessor(config=get_data_processing_config)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/3695093027.py", line 6, in __init__
+    self.user_feature_extractor = UserFeatureExtractor()
+NameError: name 'UserFeatureExtractor' is not defined. Did you mean: 'FeatureExtractor'?
+[2021-01-01 03:01:53,249: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:01:53,263: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:01:53,291: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:01:53,301: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:01:53,311: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:01:53,837: INFO: 3695093027: Extracting Movies features...⏳]
+[2021-01-01 03:01:53,847: ERROR: 2344073496: Oops😟! An error occured: name 'movies_df' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2344073496.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/3695093027.py", line 37, in process_data
+    movie_features = self.movie_feature_extractor.generate_features(movies_df, tags_df)
+NameError: name 'movies_df' is not defined
+[2021-01-01 03:03:47,363: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:03:47,399: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:03:47,429: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:03:47,435: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:03:47,442: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:03:48,194: INFO: 2744539068: Extracting Movies features...⏳]
+[2021-01-01 03:03:50,068: ERROR: 2344073496: Oops😟! An error occured: name 'StandardScaler' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2344073496.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2744539068.py", line 37, in process_data
+    movie_features = self.movie_feature_extractor.generate_features(self.movies_df, self.tags_df)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/1395948078.py", line 13, in generate_features
+    year_normalized = StandardScaler().fit_transform(movies_df[['year']].fillna(movies_df['year'].mean()))
+NameError: name 'StandardScaler' is not defined
+[2021-01-01 03:04:36,630: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:04:36,667: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:04:36,681: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:04:36,688: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:04:36,694: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:04:37,436: INFO: 2590102482: Extracting Movies features...⏳]
+[2021-01-01 03:04:39,306: INFO: 2590102482: Extracting Movies features completed ✅ ]
+[2021-01-01 03:04:39,315: INFO: 2590102482: Extracting User features...⏳]
+[2021-01-01 03:04:39,331: ERROR: 2344073496: Oops😟! An error occured: 'CSVDataPreprocessor' object has no attribute 'prepare_user_features' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2344073496.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2590102482.py", line 44, in process_data
+    user_features, user_features_df = self.prepare_user_features(self.ratings_df, self.movies_df, self.tags_df)
+AttributeError: 'CSVDataPreprocessor' object has no attribute 'prepare_user_features'
+[2021-01-01 03:08:45,210: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:08:45,235: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:08:45,261: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:08:45,267: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:08:45,271: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:08:46,163: INFO: 291365222: Extracting Movies features...⏳]
+[2021-01-01 03:08:48,164: INFO: 291365222: Extracting Movies features completed ✅ ]
+[2021-01-01 03:08:48,168: INFO: 291365222: Extracting User features...⏳]
+[2021-01-01 03:08:48,267: ERROR: 2344073496: Oops😟! An error occured: UserFeatureExtractor.calculate_user_genre_ratings() takes 2 positional arguments but 3 were given ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/2344073496.py", line 5, in <module>
+    dataset = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/291365222.py", line 44, in process_data
+    user_features, user_features_df = self.user_feature_extractor.generate_features(self.ratings_df, self.movies_df, self.tags_df)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/444981654.py", line 53, in generate_features
+    genre_ratings = self.calculate_user_genre_ratings(ratings_df, movies_df)
+TypeError: UserFeatureExtractor.calculate_user_genre_ratings() takes 2 positional arguments but 3 were given
+[2021-01-01 03:09:52,696: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:09:52,742: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:09:52,794: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:09:52,820: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:09:52,831: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:09:53,319: INFO: 291365222: Extracting Movies features...⏳]
+[2021-01-01 03:09:55,337: INFO: 291365222: Extracting Movies features completed ✅ ]
+[2021-01-01 03:09:55,343: INFO: 291365222: Extracting User features...⏳]
+[2021-01-01 03:10:00,572: INFO: 291365222: Extracting User features completed ✅]
+[2021-01-01 03:24:24,878: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:24:24,890: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:24:24,914: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:24:24,921: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:24:24,927: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:24:25,498: INFO: 3292164995: Extracting Movies features...⏳]
+[2021-01-01 03:24:27,684: INFO: 3292164995: Extracting Movies features completed ✅ ]
+[2021-01-01 03:24:27,688: INFO: 3292164995: Extracting User features...⏳]
+[2021-01-01 03:24:32,747: INFO: 3292164995: Extracting User features completed ✅]
+[2021-01-01 03:24:32,754: INFO: 3292164995: Merging features with ratings...⏳]
+[2021-01-01 03:24:32,767: ERROR: 3865336890: Oops😟! An error occured: name 'prepare_training_data' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/3865336890.py", line 5, in <module>
+    x_user, x_movie, y = data_preprocessor.process_data()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/3292164995.py", line 47, in process_data
+    X_user, X_movie, y, _, _ = prepare_training_data(self.ratings_df, movie_features, user_features)
+NameError: name 'prepare_training_data' is not defined
+[2021-01-01 03:25:07,749: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:25:07,774: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:25:07,819: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:25:07,833: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:25:07,847: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:25:08,643: INFO: 734504725: Extracting Movies features...⏳]
+[2021-01-01 03:25:11,396: INFO: 734504725: Extracting Movies features completed ✅ ]
+[2021-01-01 03:25:11,407: INFO: 734504725: Extracting User features...⏳]
+[2021-01-01 03:25:15,542: INFO: 734504725: Extracting User features completed ✅]
+[2021-01-01 03:25:15,552: INFO: 734504725: Merging features with ratings...⏳]
+[2021-01-01 03:25:15,844: INFO: 734504725: Merging features with ratings completed ✅]
+[2021-01-01 03:34:10,141: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:34:10,160: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:34:10,190: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:34:10,216: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:34:10,237: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:34:11,269: INFO: 734504725: Extracting Movies features...⏳]
+[2021-01-01 03:34:13,185: INFO: 734504725: Extracting Movies features completed ✅ ]
+[2021-01-01 03:34:13,188: INFO: 734504725: Extracting User features...⏳]
+[2021-01-01 03:34:17,896: INFO: 734504725: Extracting User features completed ✅]
+[2021-01-01 03:34:17,899: INFO: 734504725: Merging features with ratings...⏳]
+[2021-01-01 03:34:18,075: INFO: 734504725: Merging features with ratings completed ✅]
+[2021-01-01 03:34:18,096: ERROR: 3495756992: Oops😟! An error occured: 'CSVDataPreprocessor' object has no attribute 'train_validation_split' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_982/3495756992.py", line 6, in <module>
+    X_train_user, X_train_movie, y_train_rating, X_val_user, X_val_movie, y_val_rating = data_preprocessor.train_validation_split(x_user, x_movie, y)
+AttributeError: 'CSVDataPreprocessor' object has no attribute 'train_validation_split'
+[2021-01-01 03:34:31,470: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:34:31,510: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:34:31,560: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:34:31,564: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:34:31,573: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:34:32,124: INFO: 3558107034: Extracting Movies features...⏳]
+[2021-01-01 03:34:34,045: INFO: 3558107034: Extracting Movies features completed ✅ ]
+[2021-01-01 03:34:34,049: INFO: 3558107034: Extracting User features...⏳]
+[2021-01-01 03:34:38,805: INFO: 3558107034: Extracting User features completed ✅]
+[2021-01-01 03:34:38,807: INFO: 3558107034: Merging features with ratings...⏳]
+[2021-01-01 03:34:38,957: INFO: 3558107034: Merging features with ratings completed ✅]
