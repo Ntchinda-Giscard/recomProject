@@ -14,7 +14,7 @@ class Dataingestion:
 
     def download_file(self) -> None:
 
-        if not os.exist(self.config.local_data_file):
+        if not os._exists(self.config.local_data_file):
             filename, headers = request.urlretrieve(
                 url = self.config.source_URL,
                 filename= self.config.local_data_file
