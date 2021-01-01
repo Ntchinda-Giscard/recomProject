@@ -112,3 +112,171 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2021-01-01 02:50:07,577: INFO: common: Yaml file : schema.yaml loaded successfully]
 [2021-01-01 02:50:07,586: INFO: common: Created directory at: artifacts]
 [2021-01-01 02:50:07,591: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 03:29:39,583: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:29:39,586: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:29:39,594: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:29:39,595: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:29:39,597: INFO: common: Created directory at: artifacts/data_validation]
+[2021-01-01 03:29:43,827: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:29:43,830: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:29:43,836: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:29:43,838: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:29:43,839: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:29:44,861: INFO: data_transformation: Data splitted into test and training set]
+[2021-01-01 03:29:44,861: INFO: data_transformation: (7500, 9)]
+[2021-01-01 03:29:44,862: INFO: data_transformation: (2500, 9)]
+[2021-01-01 03:29:45,229: INFO: main: >>>>> Stage Data ingestion has started <<<<<]
+[2021-01-01 03:29:45,247: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:29:45,252: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:29:45,259: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:29:45,260: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:29:45,263: INFO: common: Created directory at: artifacts/data_ingestion]
+[2021-01-01 03:29:45,695: ERROR: main: <urlopen error [Errno 8] nodename nor servname provided, or not known>]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1447, in connect
+    super().connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/pipeline/stage_01_data_ingestion.py", line 20, in main
+    data_ingestion.download_file()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/components/data_ingestion.py", line 31, in download_file
+    _, headers = request.urlretrieve(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+[2021-01-01 03:29:45,757: INFO: main: >>>> Data validation stage started <<<<< ]
+[2021-01-01 03:29:45,758: INFO: main: >>>> Data validation stage completed 
+
+x=========x]
+[2021-01-01 03:29:45,759: INFO: main: >>>> Data transformation stage started <<<<< ]
+[2021-01-01 03:29:45,760: INFO: main: >>>> Data transformation stage completed 
+
+x=========x]
+[2021-01-01 03:29:45,764: INFO: main: >>>>> Stage Data transformation has started <<<<<]
+[2021-01-01 03:29:45,802: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:29:45,813: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:29:45,877: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:29:45,880: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:29:45,883: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 03:29:46,417: INFO: main: >>>>> Stage Data transformation has completed 
+
+ x=========x]
+[2021-01-01 03:31:12,309: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:31:12,314: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:31:12,321: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:31:12,323: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:31:12,323: INFO: common: Created directory at: artifacts/data_validation]
+[2021-01-01 03:31:16,377: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:31:16,380: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:31:16,386: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:31:16,387: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:31:16,388: INFO: common: Created directory at: artifacts/data_transformation]
+[2021-01-01 03:31:17,370: INFO: data_transformation: Data splitted into test and training set]
+[2021-01-01 03:31:17,371: INFO: data_transformation: (7500, 9)]
+[2021-01-01 03:31:17,372: INFO: data_transformation: (2500, 9)]
+[2021-01-01 03:31:17,611: INFO: main: >>>>> Stage Data ingestion has started <<<<<]
+[2021-01-01 03:31:17,625: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:31:17,628: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:31:17,637: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:31:17,638: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:31:17,638: INFO: common: Created directory at: artifacts/data_ingestion]
+[2021-01-01 03:31:17,822: ERROR: main: <urlopen error [Errno 8] nodename nor servname provided, or not known>]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1447, in connect
+    super().connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/pipeline/stage_01_data_ingestion.py", line 20, in main
+    data_ingestion.download_file()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/components/data_ingestion.py", line 31, in download_file
+    _, headers = request.urlretrieve(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+[2021-01-01 03:31:17,842: INFO: main: >>>> Data validation stage started <<<<< ]
+[2021-01-01 03:31:17,843: INFO: main: >>>> Data validation stage completed 
+
+x=========x]
+[2021-01-01 03:31:17,843: INFO: main: >>>> Data transformation stage started <<<<< ]
+[2021-01-01 03:31:17,843: INFO: main: >>>> Data transformation stage completed 
+
+x=========x]
+[2021-01-01 03:31:17,843: INFO: main: >>>>> Stage Model trainer has started <<<<<]
+[2021-01-01 03:31:17,877: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2021-01-01 03:31:17,881: INFO: common: Yaml file : params.yaml loaded successfully]
+[2021-01-01 03:31:17,891: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2021-01-01 03:31:17,892: INFO: common: Created directory at: artifacts]
+[2021-01-01 03:31:17,893: INFO: common: Created directory at: artifacts/model_trainer]
+[2021-01-01 03:31:18,324: INFO: main: >>>>> Stage Model trainer has completed 
+
+ x=========x]
