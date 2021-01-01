@@ -1,4 +1,8 @@
+import os
 import pandas as pd
+from sklearn.linear_model import ElasticNet
+import joblib
+from mlProject.entity.config_entity import ModelTrainerConfig
 
 
 class ModelTrainer:
