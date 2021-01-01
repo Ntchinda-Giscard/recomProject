@@ -20,8 +20,8 @@ class DataValidator(ABC):
     def validate(self) -> Any:
         pass
 
-class DataProfiler(ABC):
+class DataProcessing(ABC):
 
     @abstractmethod
-    def data_profiler(self) -> Any:
+    def processing(self) -> Any:
         pass

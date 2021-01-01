@@ -18,9 +18,11 @@ data_validation:
   unzip_movies_dir: artifacts/data_ingestion/dataset.csv 
   STATUS_FILE: artifacts/data_validation/status.txt
 
-data_transformation:
+data_processing:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/dataset.csv
+  movies: artifacts/data_ingestion/ml-latest-small/movies.csv 
+  ratings: artifacts/data_ingestion/ml-latest-small/ratings.csv 
+  tags: artifacts/data_ingestion/ml-latest-small/tags.csv
 
 model_trainer:
   root_dir: artifacts/model_trainer
