@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/819ead50884541c3bc1769fd14878020/artifacts
+end_time: 1724376309748
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 819ead50884541c3bc1769fd14878020
+run_name: charming-kite-995
+run_uuid: 819ead50884541c3bc1769fd14878020
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724376280813
+status: 3
+tags: []
+user_id: ntchindagiscard

@@ -504,3 +504,336 @@ x=========x]
 [2021-01-01 03:08:07,876: INFO: main: >>>>> Stage Model evaluation has completed 
 
  x=========x]
+[2024-08-21 04:03:05,328: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 04:03:05,345: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 04:03:05,377: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 04:03:05,383: INFO: common: Created directory at: artifacts]
+[2024-08-21 04:03:05,384: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-21 04:03:18,185: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 04:03:18,193: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 04:03:18,208: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 04:03:18,211: INFO: common: Created directory at: artifacts]
+[2024-08-21 04:03:18,212: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-21 04:03:21,044: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-21 04:03:21,045: INFO: data_transformation: (7500, 9)]
+[2024-08-21 04:03:21,046: INFO: data_transformation: (2500, 9)]
+[2024-08-21 04:11:56,346: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 04:11:56,357: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 04:11:56,376: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 04:11:56,398: INFO: common: Created directory at: artifacts]
+[2024-08-21 04:11:56,403: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-21 04:12:16,913: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 04:12:16,942: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 04:12:16,972: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 04:12:16,980: INFO: common: Created directory at: artifacts]
+[2024-08-21 04:12:17,006: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-21 04:12:20,727: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-21 04:12:20,729: INFO: data_transformation: (7500, 9)]
+[2024-08-21 04:12:20,732: INFO: data_transformation: (2500, 9)]
+[2024-08-21 04:14:31,577: WARNING: connectionpool: Retrying (Retry(total=9, connect=4, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1375e9060>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:31,806: WARNING: connectionpool: Retrying (Retry(total=8, connect=3, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1375eafe0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:32,250: WARNING: connectionpool: Retrying (Retry(total=7, connect=2, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1375ea8f0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:33,059: WARNING: connectionpool: Retrying (Retry(total=6, connect=1, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c281f0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:34,786: WARNING: connectionpool: Retrying (Retry(total=5, connect=0, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c283a0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:35,088: WARNING: connectionpool: Retrying (Retry(total=9, connect=4, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c29570>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:35,490: WARNING: connectionpool: Retrying (Retry(total=8, connect=3, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c29780>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:36,160: WARNING: connectionpool: Retrying (Retry(total=7, connect=2, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c29930>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:36,994: WARNING: connectionpool: Retrying (Retry(total=6, connect=1, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c29ae0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 04:14:38,621: WARNING: connectionpool: Retrying (Retry(total=5, connect=0, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x135c29c90>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-21 06:28:20,878: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 06:28:20,889: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 06:28:20,906: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 06:28:20,913: INFO: common: Created directory at: artifacts]
+[2024-08-21 06:28:20,914: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-21 06:28:27,108: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 06:28:27,190: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 06:28:27,263: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 06:28:27,270: INFO: common: Created directory at: artifacts]
+[2024-08-21 06:28:27,282: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-21 06:28:29,119: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-21 06:28:29,120: INFO: data_transformation: (7500, 9)]
+[2024-08-21 06:28:29,122: INFO: data_transformation: (2500, 9)]
+[2024-08-21 06:32:56,163: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 06:32:56,183: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 06:32:56,232: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 06:32:56,254: INFO: common: Created directory at: artifacts]
+[2024-08-21 06:32:56,258: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-21 06:33:02,164: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-21 06:33:02,171: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-21 06:33:02,182: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-21 06:33:02,185: INFO: common: Created directory at: artifacts]
+[2024-08-21 06:33:02,187: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-21 06:33:03,807: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-21 06:33:03,809: INFO: data_transformation: (7500, 9)]
+[2024-08-21 06:33:03,809: INFO: data_transformation: (2500, 9)]
+[2024-08-23 02:05:42,299: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-23 02:05:42,335: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-23 02:05:42,454: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-23 02:05:42,522: INFO: common: Created directory at: artifacts]
+[2024-08-23 02:05:42,524: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-23 02:24:26,170: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-23 02:24:26,176: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-23 02:24:26,184: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-23 02:24:26,185: INFO: common: Created directory at: artifacts]
+[2024-08-23 02:24:26,186: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-23 02:24:31,759: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-23 02:24:31,763: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-23 02:24:31,780: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-23 02:24:31,788: INFO: common: Created directory at: artifacts]
+[2024-08-23 02:24:31,789: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-23 02:24:32,946: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-23 02:24:32,947: INFO: data_transformation: (7500, 9)]
+[2024-08-23 02:24:32,949: INFO: data_transformation: (2500, 9)]
+[2024-08-23 02:24:37,146: INFO: main: >>>>> Stage Data ingestion has started <<<<<]
+[2024-08-23 02:24:37,167: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-23 02:24:37,170: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-23 02:24:37,180: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-23 02:24:37,182: INFO: common: Created directory at: artifacts]
+[2024-08-23 02:24:37,183: INFO: common: Created directory at: artifacts/data_ingestion]
+[2024-08-23 02:24:38,136: ERROR: main: HTTP Error 400: Bad Request]
+Traceback (most recent call last):
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/main.py", line 13, in <module>
+    obj.main()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/pipeline/stage_01_data_ingestion.py", line 20, in main
+    data_ingestion.download_file()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/components/data_ingestion.py", line 31, in download_file
+    _, headers = request.urlretrieve(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2024-08-23 02:24:38,161: INFO: main: >>>> Data validation stage started <<<<< ]
+[2024-08-23 02:24:38,163: INFO: main: >>>> Data validation stage completed 
+
+x=========x]
+[2024-08-23 02:24:38,164: INFO: main: >>>> Data transformation stage started <<<<< ]
+[2024-08-23 02:24:38,170: INFO: main: >>>> Data transformation stage completed 
+
+x=========x]
+[2024-08-23 02:24:38,171: INFO: main: >>>>> Stage Model trainer has started <<<<<]
+[2024-08-23 02:24:38,333: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-23 02:24:38,354: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-23 02:24:38,417: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-23 02:24:38,419: INFO: common: Created directory at: artifacts]
+[2024-08-23 02:24:38,428: INFO: common: Created directory at: artifacts/model_trainer]
+[2024-08-23 02:24:39,718: INFO: main: >>>>> Stage Model trainer has completed 
+
+ x=========x]
+[2024-08-23 02:24:39,720: INFO: main: >>>>> Stage Model evaluation has started <<<<<]
+[2024-08-23 02:24:39,760: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-23 02:24:39,765: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-23 02:24:39,776: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-23 02:24:39,781: INFO: common: Created directory at: artifacts]
+[2024-08-23 02:24:39,787: INFO: common: Created directory at: artifacts/model_evaluation]
+[2024-08-23 02:24:40,954: INFO: common: Json file saved at: artifacts/model_evaluation/metrics.json]
+[2024-08-23 02:25:09,790: INFO: main: >>>>> Stage Model evaluation has completed 
+
+ x=========x]
+[2024-08-24 16:53:09,806: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 16:53:09,840: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 16:53:09,948: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 16:53:09,956: INFO: common: Created directory at: artifacts]
+[2024-08-24 16:53:09,976: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 16:53:35,624: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 16:53:35,650: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 16:53:35,789: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 16:53:35,794: INFO: common: Created directory at: artifacts]
+[2024-08-24 16:53:35,887: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 16:53:47,559: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 16:53:47,656: INFO: data_transformation: (7500, 9)]
+[2024-08-24 16:53:47,675: INFO: data_transformation: (2500, 9)]
+[2024-08-24 16:54:26,772: INFO: main: >>>>> Stage Data ingestion has started <<<<<]
+[2024-08-24 16:54:27,657: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 16:54:27,808: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 16:54:28,536: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 16:54:28,539: INFO: common: Created directory at: artifacts]
+[2024-08-24 16:54:28,541: INFO: common: Created directory at: artifacts/data_ingestion]
+[2024-08-24 16:54:35,411: ERROR: main: HTTP Error 400: Bad Request]
+Traceback (most recent call last):
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/main.py", line 13, in <module>
+    obj.main()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/pipeline/stage_01_data_ingestion.py", line 20, in main
+    data_ingestion.download_file()
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/src/mlProject/components/data_ingestion.py", line 31, in download_file
+    _, headers = request.urlretrieve(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2024-08-24 16:54:35,740: INFO: main: >>>> Data validation stage started <<<<< ]
+[2024-08-24 16:54:35,741: INFO: main: >>>> Data validation stage completed 
+
+x=========x]
+[2024-08-24 16:54:35,744: INFO: main: >>>> Data transformation stage started <<<<< ]
+[2024-08-24 16:54:35,746: INFO: main: >>>> Data transformation stage completed 
+
+x=========x]
+[2024-08-24 16:54:35,753: INFO: main: >>>>> Stage Model trainer has started <<<<<]
+[2024-08-24 16:54:36,114: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 16:54:36,128: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 16:54:36,140: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 16:54:36,159: INFO: common: Created directory at: artifacts]
+[2024-08-24 16:54:36,164: INFO: common: Created directory at: artifacts/model_trainer]
+[2024-08-24 16:54:45,659: INFO: main: >>>>> Stage Model trainer has completed 
+
+ x=========x]
+[2024-08-24 16:54:45,775: INFO: main: >>>>> Stage Model evaluation has started <<<<<]
+[2024-08-24 16:54:46,366: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 16:54:46,903: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 16:54:46,916: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 16:54:47,407: INFO: common: Created directory at: artifacts]
+[2024-08-24 16:54:47,415: INFO: common: Created directory at: artifacts/model_evaluation]
+[2024-08-24 16:54:52,568: INFO: common: Json file saved at: artifacts/model_evaluation/metrics.json]
+[2024-08-24 16:56:26,362: INFO: main: >>>>> Stage Model evaluation has completed 
+
+ x=========x]
+[2024-08-24 17:06:22,367: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:06:22,383: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:06:22,398: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:06:22,400: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:06:22,401: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 17:06:28,425: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:06:28,449: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:06:28,495: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:06:28,511: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:06:28,525: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 17:06:29,808: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 17:06:29,809: INFO: data_transformation: (7500, 9)]
+[2024-08-24 17:06:29,810: INFO: data_transformation: (2500, 9)]
+[2024-08-24 17:07:08,371: WARNING: connectionpool: Retrying (Retry(total=9, connect=4, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1336bb820>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:08,601: WARNING: connectionpool: Retrying (Retry(total=8, connect=3, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1336bbf10>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:09,008: WARNING: connectionpool: Retrying (Retry(total=7, connect=2, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba4100>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:09,816: WARNING: connectionpool: Retrying (Retry(total=6, connect=1, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba42b0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:11,423: WARNING: connectionpool: Retrying (Retry(total=5, connect=0, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba4460>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:11,478: WARNING: connectionpool: Retrying (Retry(total=9, connect=4, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba5630>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:11,689: WARNING: connectionpool: Retrying (Retry(total=8, connect=3, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba5840>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:12,097: WARNING: connectionpool: Retrying (Retry(total=7, connect=2, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba59f0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:12,926: WARNING: connectionpool: Retrying (Retry(total=6, connect=1, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba5ba0>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:07:14,540: WARNING: connectionpool: Retrying (Retry(total=5, connect=0, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133ba5d50>: Failed to establish a new connection: [Errno 61] Connection refused')': /api/v1/info]
+[2024-08-24 17:10:12,559: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:10:12,573: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:10:12,587: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:10:12,591: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:10:12,593: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 17:10:19,908: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:10:19,915: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:10:19,950: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:10:19,953: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:10:19,957: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 17:10:22,214: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 17:10:22,214: INFO: data_transformation: (7500, 9)]
+[2024-08-24 17:10:22,215: INFO: data_transformation: (2500, 9)]
+[2024-08-24 17:12:50,697: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:12:50,714: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:12:50,744: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:12:50,747: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:12:50,748: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 17:12:59,540: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:12:59,547: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:12:59,562: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:12:59,564: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:12:59,565: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 17:13:01,688: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 17:13:01,691: INFO: data_transformation: (7500, 9)]
+[2024-08-24 17:13:01,884: INFO: data_transformation: (2500, 9)]
+[2024-08-24 17:14:25,392: WARNING: connectionpool: Retrying (Retry(total=9, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:25,653: WARNING: connectionpool: Retrying (Retry(total=8, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:26,079: WARNING: connectionpool: Retrying (Retry(total=7, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:26,907: WARNING: connectionpool: Retrying (Retry(total=6, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:28,521: WARNING: connectionpool: Retrying (Retry(total=5, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:31,803: WARNING: connectionpool: Retrying (Retry(total=4, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:38,530: WARNING: connectionpool: Retrying (Retry(total=3, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:51,350: WARNING: connectionpool: Retrying (Retry(total=2, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:14:56,611: WARNING: connectionpool: Retrying (Retry(total=9, connect=5, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /api/v1/info]
+[2024-08-24 17:21:47,583: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:21:47,596: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:21:47,608: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:21:47,615: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:21:47,688: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 17:21:53,938: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:21:53,960: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:21:54,007: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:21:54,041: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:21:54,042: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 17:21:55,088: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 17:21:55,091: INFO: data_transformation: (7500, 9)]
+[2024-08-24 17:21:55,092: INFO: data_transformation: (2500, 9)]
+[2024-08-24 17:31:33,783: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:31:33,790: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:31:33,803: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:31:33,813: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:31:33,814: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 17:31:40,386: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:31:40,394: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:31:40,409: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:31:40,411: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:31:40,411: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 17:31:41,329: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 17:31:41,331: INFO: data_transformation: (7500, 9)]
+[2024-08-24 17:31:41,332: INFO: data_transformation: (2500, 9)]
+[2024-08-24 17:32:31,963: INFO: stage_01_data_ingestion: >>>>> Stage Data ingestion stage has started <<<<<]
+[2024-08-24 17:32:31,996: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:32:32,022: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:32:32,037: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:32:32,040: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:32:32,069: INFO: common: Created directory at: artifacts/data_ingestion]
+[2024-08-24 17:32:33,837: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:32:33,843: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:32:33,853: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:32:33,865: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:32:33,867: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-08-24 17:32:34,939: INFO: data_transformation: Data splitted into test and training set]
+[2024-08-24 17:32:34,970: INFO: data_transformation: (7500, 9)]
+[2024-08-24 17:32:34,973: INFO: data_transformation: (2500, 9)]
+[2024-08-24 17:32:37,278: INFO: stage_03_data_transformation: >>>> Data transformation stage started <<<<< ]
+[2024-08-24 17:32:37,278: INFO: stage_03_data_transformation: >>>> Data transformation stage completed 
+
+x=========x]
+[2024-08-24 17:32:38,966: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:32:38,981: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:32:39,009: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:32:39,011: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:32:39,012: INFO: common: Created directory at: artifacts/data_validation]
+[2024-08-24 17:32:40,686: INFO: stage_02_data_validation: >>>> Data validation stage started <<<<< ]
+[2024-08-24 17:32:40,689: INFO: stage_02_data_validation: >>>> Data validation stage completed x=========x]
+[2024-08-24 17:32:43,127: INFO: stage_05_model_evaluation:  >>>>>>>> Model evaluation has started <<<<<<<<<< ]
+[2024-08-24 17:32:43,151: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:32:43,159: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:32:43,174: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:32:43,175: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:32:43,176: INFO: common: Created directory at: artifacts/model_evaluation]
+[2024-08-24 17:32:44,362: INFO: common: Json file saved at: artifacts/model_evaluation/metrics.json]
+[2024-08-24 17:33:23,843: INFO: stage_05_model_evaluation: >>>>> Model evaluation has completed 
+
+ x==================x]
+[2024-08-24 17:33:26,172: INFO: stage_04_model_trainer: >>>>> Stage Model trainer has started <<<<<]
+[2024-08-24 17:33:26,230: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2024-08-24 17:33:26,272: INFO: common: Yaml file : params.yaml loaded successfully]
+[2024-08-24 17:33:26,377: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2024-08-24 17:33:26,383: INFO: common: Created directory at: artifacts]
+[2024-08-24 17:33:26,387: INFO: common: Created directory at: artifacts/model_trainer]
+[2024-08-24 17:33:27,173: INFO: stage_04_model_trainer: >>>>> Stage Model trainer has completed 
+
+ x=========x]

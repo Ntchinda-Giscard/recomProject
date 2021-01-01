@@ -22,6 +22,7 @@ src/mlProject/pipeline/stage_02_data_validation.py
 src/mlProject/pipeline/stage_03_data_transformation.py
 src/mlProject/pipeline/stage_04_model_trainer.py
 src/mlProject/pipeline/stage_05_model_evaluation.py
+src/mlProject/pipeline/training_pipeline.py
 src/mlProject/utils/__init__.py
 src/mlProject/utils/common.py
 src/mlProject/utils/common.test.py

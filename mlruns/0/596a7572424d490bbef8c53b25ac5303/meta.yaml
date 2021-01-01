@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/596a7572424d490bbef8c53b25ac5303/artifacts
+end_time: 1724514986204
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 596a7572424d490bbef8c53b25ac5303
+run_name: bouncy-fish-410
+run_uuid: 596a7572424d490bbef8c53b25ac5303
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724514891884
+status: 3
+tags: []
+user_id: ntchindagiscard
