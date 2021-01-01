@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/b1691929d22244ed95c6ebe4c82e8ea0/artifacts
+end_time: 1609466887840
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b1691929d22244ed95c6ebe4c82e8ea0
+run_name: able-ram-35
+run_uuid: b1691929d22244ed95c6ebe4c82e8ea0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1609466854063
+status: 3
+tags: []
+user_id: ntchindagiscard
