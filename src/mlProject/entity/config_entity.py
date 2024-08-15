@@ -8,3 +8,10 @@ class DataIngestionConfig:
     source_URL: str
     local_data_file: Path
     unsizp_dir: Path
+
+@dataclass(frozen=True)
+class DataValidationConfig:
+    root_dir: str
+    unzip_file_dir: str
+    STATUS_FILE: str
+    all_schema: dict
