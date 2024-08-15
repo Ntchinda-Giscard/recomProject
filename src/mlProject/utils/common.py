@@ -10,7 +10,6 @@ from typing import Any
 from mlProject import logger
 
 
-@ensure_annotations
 def create_directories(paths: list, verbose=True) -> None:
     """
     Creates directories at the specified paths.

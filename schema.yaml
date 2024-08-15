@@ -1,12 +1,12 @@
 COLUMNS:
-  id: int
-  title: string
-  genre: string
-  original_language: string
-  overview: string
+  id: int64
+  title: object
+  genre: object
+  original_language: object
+  overview: object
   popularity: float64
-  release_date: datetime
-  vote_count: int
+  release_date: object
+  vote_count: int64
 
 TARGET_COLUMN:
   vote_average: float64
