@@ -1,1 +1,12 @@
-key: value
+COLUMNS:
+  id: int
+  title: string
+  genre: string
+  original_language: string
+  overview: string
+  popularity: float64
+  release_date: datetime
+  vote_count: int
+
+TARGET_COLUMN:
+  vote_average: float64
