@@ -12,10 +12,19 @@ class DataValidtionPipeline:
         pass
 
     def main(self) -> Any:
-        config = ConfigurationManager()
-        data_validation_config = config.get_data_validation_configuration()
-        data_validation = DataValidation(config=data_validation_config)
-        data_validation.validate_all_columns()
+        """
+        This function is responsible for orchestrating the data validation pipeline.
+
+        Parameters:
+        self (DataValidtionPipeline): The instance of the DataValidtionPipeline class.
+
+        Returns:
+        Any: This function does not return any specific value. It is mainly used for orchestrating the data validation process.
+        """
+    config = ConfigurationManager()
+    data_validation_config = config.get_data_validation_configuration()
+    data_validation = DataValidation(config=data_validation_config)
+    data_validation.validate_all_columns()
 
 
 if __name__ =="__main__":

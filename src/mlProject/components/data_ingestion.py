@@ -13,9 +13,22 @@ class Dataingestion:
         self.config = config
 
     def download_file(self) -> None:
+        """
+        Downloads a file from a specified URL to a local directory.
+
+        If the file already exists locally, it logs the file size and does not download it again.
+
+        Parameters:
+        - self: The instance of the class.
+        - self.config.source_URL (str): The URL from which to download the file.
+        - self.config.local_data_file (str): The local path where the file will be saved.
+
+        Returns:
+        - None: The function does not return any value.
+        """
 
         if not os._exists(self.config.local_data_file):
-            filename, headers = request.urlretrieve(
+            _, headers = request.urlretrieve(
                 url = self.config.source_URL,
                 filename= self.config.local_data_file
             ) 
