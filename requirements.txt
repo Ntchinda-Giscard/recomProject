@@ -22,5 +22,6 @@ lightgbm
 markupsafe
 xgboost
 streamlit
+dagshub
 
 -e .

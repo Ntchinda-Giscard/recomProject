@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/a75cc5fdc7a942beb6fb01aaf8886433/artifacts
+end_time: 1724044206398
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a75cc5fdc7a942beb6fb01aaf8886433
+run_name: caring-mole-348
+run_uuid: a75cc5fdc7a942beb6fb01aaf8886433
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724044205569
+status: 4
+tags: []
+user_id: ntchindagiscard

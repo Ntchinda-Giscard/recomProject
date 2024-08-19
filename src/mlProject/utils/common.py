@@ -57,7 +57,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     except Exception as e:
         raise e
 
-@ensure_annotations
+# @ensure_annotations
 def save_json(path: Path, data: dict) -> None:
     """
     Saves a dictionary as a JSON file at the specified path.
