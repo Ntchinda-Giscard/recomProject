@@ -2,7 +2,7 @@ from pathlib import Path
 from mlProject.components.data_transformation import DataTransformation
 from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
-
+from zenml import step
 
 STAGE_NAME = "Data transformation"
 
@@ -44,6 +44,19 @@ class DataTransformationPipeline:
             raise Exception("Your data scheema is invalid")
     except Exception as e:
         raise e
+
+@step
+def data_transformation() -> None:
+    try:
+        logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
+        obj = DataTransformationPipeline()
+        obj.main()
+        logger.info(f">>>> {STAGE_NAME} stage completed \n\nx=========x")
+    
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
 
 if __name__ =="__main__":
     try:
