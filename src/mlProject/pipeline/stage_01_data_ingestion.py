@@ -28,7 +28,7 @@ def data_ingestion() -> None:
         obj.main()
         logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
     except Exception as e:
-        raise e
+        pass
 
 if __name__ == "__main__":
     try:

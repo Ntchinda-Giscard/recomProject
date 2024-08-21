@@ -27,7 +27,7 @@ class DataValidtionPipeline:
     data_validation.validate_all_columns()
 
 @step
-def data_validation():
+def data_validation() -> None:
     try:
         logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
         obj = DataValidtionPipeline()
