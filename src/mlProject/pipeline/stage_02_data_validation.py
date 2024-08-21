@@ -2,7 +2,7 @@ from typing import Any
 from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.data_validation import DataValidation
 from mlProject import logger
-
+from zenml import step
 
 STAGE_NAME="Data validation"
 
@@ -26,6 +26,17 @@ class DataValidtionPipeline:
     data_validation = DataValidation(config=data_validation_config)
     data_validation.validate_all_columns()
 
+@step
+def data_validation():
+    try:
+        logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
+        obj = DataValidtionPipeline()
+        obj.main()
+        logger.info(f">>>> {STAGE_NAME} stage completed x=========x")
+    
+    except Exception as e:
+        logger.exception(e)
+        raise e
 
 if __name__ =="__main__":
     try:
