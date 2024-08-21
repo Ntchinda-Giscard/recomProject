@@ -15,6 +15,7 @@ Flask-Cors
 fastapi
 uvicorn
 zenml[server]
+zenml
 tensorflow
 keras
 catboost

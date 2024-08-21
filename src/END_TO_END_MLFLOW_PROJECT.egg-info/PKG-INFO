@@ -5,6 +5,8 @@ Summary: A small python package for ml project
 Home-page: https://github.comNtchinda-Giscard/END-TO-END-MLFLOW-PROJECT
 Author: Ntchinda-Giscard
 Author-email: ntchinda1998@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
 License-File: LICENSE
 
 # Recomendation system
@@ -20,3 +22,5 @@ License-File: LICENSE
 7. Update components
 8. Update pipelines
 9. Update main.py
+
+
