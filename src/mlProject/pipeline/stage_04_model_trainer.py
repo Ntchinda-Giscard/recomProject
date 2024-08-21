@@ -26,6 +26,7 @@ def model_trainer() -> None:
         obj.main()
         logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
     except Exception as e:
+        logger.exception(e)
         raise e
 
 if __name__ == "__main__":
