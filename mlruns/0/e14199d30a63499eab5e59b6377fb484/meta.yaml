@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/e14199d30a63499eab5e59b6377fb484/artifacts
+end_time: 1735703131814
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e14199d30a63499eab5e59b6377fb484
+run_name: gifted-jay-49
+run_uuid: e14199d30a63499eab5e59b6377fb484
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735703025014
+status: 3
+tags: []
+user_id: ntchindagiscard

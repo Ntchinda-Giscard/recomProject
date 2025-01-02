@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/bed6cbeb559f421b95bbfc554ef7545e/artifacts
+end_time: 1609477130511
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bed6cbeb559f421b95bbfc554ef7545e
+run_name: nosy-seal-382
+run_uuid: bed6cbeb559f421b95bbfc554ef7545e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1609477096962
+status: 3
+tags: []
+user_id: ntchindagiscard
