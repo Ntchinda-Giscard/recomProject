@@ -1,7 +1,10 @@
 from zenml import step
 from mlProject.components.data_ingestion import Dataingestion
 from mlProject.config.configuration import ConfigurationManager
+from mlProject.utils.materializers import PosixPathMaterializer
 from mlProject import logger
+from pathlib import Path, PosixPath
+
 
 
 
@@ -12,21 +15,23 @@ class DataingestionPipeline:
     def __init__(self) -> None:
         pass
 
-    def main(self) -> None:
+    def main(self) -> PosixPath:
 
         config = ConfigurationManager()
         data_injestion_config = config.get_data_ingestion_config()
         data_ingestion = Dataingestion(config = data_injestion_config)
         data_ingestion.download_file()
-        data_ingestion.extrat_zip_file()
+        path = data_ingestion.extrat_zip_file()
+        return path
 
-@step
-def data_ingestion() -> None:
+@step(output_materializers = PosixPathMaterializer)
+def data_ingestion() -> PosixPath:
     try:
         logger.info(f">>>>> Stage {STAGE_NAME} has started <<<<<")
         obj = DataingestionPipeline()
-        obj.main()
+        path = obj.main()
         logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
+        return path
     except Exception as e:
         pass
 
@@ -38,3 +43,4 @@ if __name__ == "__main__":
         logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
     except Exception as e:
         raise e
+        # pass

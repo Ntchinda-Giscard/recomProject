@@ -12,7 +12,7 @@ class Dataingestion:
     def __init__(self, config: DataIngestionConfig) -> None:
         self.config = config
 
-    def download_file(self) -> None:
+    def download_file(self) -> Path:
         """
         Downloads a file from a specified URL to a local directory.
 
@@ -41,3 +41,6 @@ class Dataingestion:
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+
+            print(f"where files is saved: {Path(self.config.local_data_file)}")
+        return Path(self.config.local_data_file)

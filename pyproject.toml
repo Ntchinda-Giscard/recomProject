@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "bentoml>=1.3.18",
+    "distutils",
     "packaging>=24.2",
     "setuptools>=75.6.0",
     "tensorflow==2.10",

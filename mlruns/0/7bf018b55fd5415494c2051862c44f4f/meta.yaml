@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/7bf018b55fd5415494c2051862c44f4f/artifacts
+end_time: 1735808134760
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7bf018b55fd5415494c2051862c44f4f
+run_name: bald-gnu-490
+run_uuid: 7bf018b55fd5415494c2051862c44f4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735808106419
+status: 4
+tags: []
+user_id: ntchindagiscard
