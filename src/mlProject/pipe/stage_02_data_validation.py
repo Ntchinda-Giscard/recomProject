@@ -3,7 +3,7 @@ from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.data_validation import DataValidation
 from mlProject import logger
 from zenml import step
-from pathlib import Path
+from pathlib import Path, PosixPath
 
 STAGE_NAME="Data validation"
 
@@ -28,7 +28,7 @@ class DataValidtionPipeline:
     data_validation.validate_all_columns()
 
 @step
-def data_validation(data_path: Path) -> None:
+def data_validation(data_path: PosixPath) -> None:
     try:
         logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
         obj = DataValidtionPipeline()

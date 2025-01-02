@@ -31,7 +31,7 @@ def data_ingestion() -> PosixPath:
         obj = DataingestionPipeline()
         path = obj.main()
         logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
-        return path
+        return PosixPath(path)
     except Exception as e:
         pass
 
