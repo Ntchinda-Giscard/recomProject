@@ -13,3 +13,7 @@ def training_pipeline():
     data_transformation()
     model_trainer()
     model_evaluation()
+
+
+if __name__ == "__main__":
+    training_pipeline()
