@@ -3,6 +3,7 @@ from mlProject.components.data_transformation import DataTransformation
 from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
 from zenml import step
+import pandas as pd
 
 STAGE_NAME = "Data transformation"
 
@@ -46,7 +47,7 @@ class DataTransformationPipeline:
         raise e
 
 @step
-def data_transformation() -> None:
+def data_transformation(data_frame: pd.DataFrame) -> None:
     try:
         logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
         obj = DataTransformationPipeline()

@@ -1,5 +1,6 @@
 from mlProject.entity.config_entity import DataValidationConfig
 import pandas as pd
+from typing import Tuple
 
 
 class DataValidation:
@@ -8,7 +9,7 @@ class DataValidation:
         
         self.config = config
     
-    def validate_all_columns(self) -> bool:
+    def validate_all_columns(self) -> Tuple[bool, pd.DataFrame]:
 
         try:
             validation_status = None
@@ -28,7 +29,7 @@ class DataValidation:
                     with open(self.config.STATUS_FILE, 'w') as f:
                         f.write(f"validation status: {validation_status}")
             
-            return validation_status
+            return validation_status, data
 
         except Exception as e:
             raise e
