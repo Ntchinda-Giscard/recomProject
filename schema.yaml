@@ -1,16 +1,12 @@
 COLUMNS:
+  id: int64
   title: object
-  movieId: int64
-  genres: object
-  # id: int64
-  # title: object
-  # genre: object
-  # original_language: object
-  # overview: object
-  # popularity: float64
-  # release_date: object
-  # vote_count: int64
+  genre: object
+  original_language: object
+  overview: object
+  popularity: float64
+  release_date: object
+  vote_count: int64
 
 TARGET_COLUMN:
-  name: movieId
-  # name: vote_average
+  name: vote_average

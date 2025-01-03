@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/c0b7d77989394658a60e805bbbd20d6b/artifacts
+end_time: 1735902770021
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c0b7d77989394658a60e805bbbd20d6b
+run_name: unique-auk-69
+run_uuid: c0b7d77989394658a60e805bbbd20d6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735902749205
+status: 4
+tags: []
+user_id: ntchindagiscard

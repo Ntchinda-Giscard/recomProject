@@ -2,6 +2,8 @@ from zenml import step
 from mlProject.components.model_evaluation import ModelEvaluation
 from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
+from sklearn.linear_model import ElasticNet
+
 
 STAGE_NAME = "Model evaluation"
 
@@ -18,7 +20,7 @@ class ModelEvaluationPiepline:
         model_evaluation.log_into_mlflow()
 
 @step
-def model_evaluation() -> None:
+def model_evaluation(model: ElasticNet) -> None:
     try:
         logger.info(f" >>>>>>>> {STAGE_NAME} has started <<<<<<<<<< ")
         obj = ModelEvaluationPiepline()

@@ -30,7 +30,7 @@ class DataValidtionPipeline:
         status, data = data_validation.validate_all_columns()
         return status, data
 
-@step
+@step(enable_cache=False)
 def data_validation(data_path: PosixPath) -> pd.DataFrame:
     try:
         logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")

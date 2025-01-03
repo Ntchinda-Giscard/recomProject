@@ -24,7 +24,7 @@ class DataingestionPipeline:
         path = data_ingestion.extrat_zip_file()
         return path
 
-@step(output_materializers = PosixPathMaterializer)
+@step(output_materializers = PosixPathMaterializer, enable_cache=False)
 def data_ingestion() -> PosixPath:
     try:
         logger.info(f">>>>> Stage {STAGE_NAME} has started <<<<<")

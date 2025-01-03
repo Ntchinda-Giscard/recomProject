@@ -3,15 +3,17 @@ from sklearn.model_selection import train_test_split
 from mlProject.entity.config_entity import DataTransformationConfig
 import pandas as pd
 from mlProject import logger
+from typing import Tuple
+import pandas as pd
 
 
 class DataTransformation:
 
-    def __init__(self, config: DataTransformationConfig) -> None:
+    def __init__(self, config: DataTransformationConfig) -> Tuple[pd.DataFrame, pd.DataFrame] :
         
         self.config = config
 
-    def train_test_spliting(self):
+    def train_test_spliting(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
         data = pd.read_csv(self.config.data_path)
         train,test = train_test_split(data)
@@ -22,3 +24,5 @@ class DataTransformation:
         logger.info("Data splitted into test and training set")
         logger.info(train.shape)
         logger.info(test.shape)
+
+        return train, test
