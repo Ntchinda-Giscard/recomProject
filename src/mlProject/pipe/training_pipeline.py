@@ -12,7 +12,7 @@ def training_pipeline():
     data_frame = data_validation(data_path=data_path)
     train, test = data_transformation(data_frame = data_frame)
     model_trainer(train, test)
-
+   
 
 
 if __name__ == "__main__":
