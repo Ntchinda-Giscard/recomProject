@@ -1005,3 +1005,45 @@ x=========x]
 [2025-01-01 04:45:31,842: INFO: main: >>>>> Stage Model evaluation has completed 
 
  x=========x]
+[2025-01-10 11:24:15,880: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-10 11:24:15,903: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-10 11:24:15,927: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-10 11:24:15,935: INFO: common: Created directory at: artifacts]
+[2025-01-10 11:24:15,964: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-01-10 11:26:12,795: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-10 11:26:12,809: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-10 11:26:12,869: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-10 11:26:12,910: INFO: common: Created directory at: artifacts]
+[2025-01-10 11:26:12,930: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-01-10 11:27:21,661: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-10 11:27:21,698: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-10 11:27:21,776: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-10 11:27:21,785: INFO: common: Created directory at: artifacts]
+[2025-01-10 11:27:21,794: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-01-10 11:27:21,815: INFO: 1878479995: File already exists of size ~1445 KB]
+[2025-01-10 11:37:44,878: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-10 11:37:44,889: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-10 11:37:44,909: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-10 11:37:44,918: INFO: common: Created directory at: artifacts]
+[2025-01-10 11:37:44,926: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-01-10 11:38:44,814: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-10 11:38:44,831: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-10 11:38:44,846: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-10 11:38:44,853: INFO: common: Created directory at: artifacts]
+[2025-01-10 11:38:44,858: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-01-10 11:39:15,108: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-10 11:39:15,136: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-10 11:39:15,174: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-10 11:39:15,203: INFO: common: Created directory at: artifacts]
+[2025-01-10 11:39:15,224: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-01-10 11:39:20,435: INFO: 2961306340: File download! With the following information : 
+Date: Fri, 10 Jan 2025 10:39:21 GMT
+Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+Last-Modified: Tue, 03 Dec 2019 17:14:18 GMT
+ETag: "eed1a-598cfd387dc5a"
+Accept-Ranges: bytes
+Content-Length: 978202
+Connection: close
+Content-Type: application/zip
+
+ ]

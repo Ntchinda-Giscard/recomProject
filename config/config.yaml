@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://vvims-visitor.s3.eu-north-1.amazonaws.com/dataset.csv.zip
+  source_URL: https://files.grouplens.org/datasets/movielens/ml-latest-small.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unsizp_dir: artifacts/data_ingestion
 
