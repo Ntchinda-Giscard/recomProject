@@ -24,8 +24,10 @@ class MoviesDataLoader(DataLoader):
         else:
             logger.info(f"File already exists of size {get_size(Path(self.config.local_data_file))}")
 
-    def extrat_zip_file(self):
+    def extrat_zip_file(self) -> Path:
         unzip_path = self.config.unsizp_dir
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+        
+        return unzip_path
