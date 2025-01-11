@@ -1,6 +1,6 @@
 from typing import Any
 from mlProject.config.configuration import ConfigurationManager
-from mlProject.components.data_validation import DataValidation
+from mlProject.components.data_validation import MoviesDataValidator
 from mlProject import logger
 from zenml import step
 from pathlib import Path, PosixPath
@@ -14,7 +14,7 @@ class DataValidtionPipeline:
     def __init__(self) -> None:
         pass
 
-    def main(self) -> Tuple[bool, pd.DataFrame]:
+    def main(self) -> bool:
         """
         This function is responsible for orchestrating the data validation pipeline.
 
@@ -27,28 +27,17 @@ class DataValidtionPipeline:
         config = ConfigurationManager()
         data_validation_config = config.get_data_validation_configuration()
         data_validation = DataValidation(config=data_validation_config)
-        status, data = data_validation.validate_all_columns()
-        return status, data
+        status = MoviesDataValidator.validate_dataset()
+        return status
 
 @step(enable_cache=False)
-def data_validation(data_path: PosixPath) -> pd.DataFrame:
+def data_validation(data_path: PosixPath) -> bool:
     try:
         logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
         obj = DataValidtionPipeline()
-        _, data_frame = obj.main()
+        status = obj.main()
         logger.info(f">>>> {STAGE_NAME} stage completed x=========x")
-        return data_frame
-    except Exception as e:
-        logger.exception(e)
-        raise e
-
-if __name__ =="__main__":
-    try:
-        logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
-        obj = DataValidtionPipeline()
-        obj.main()
-        logger.info(f">>>> {STAGE_NAME} stage completed x=========x")
-    
+        return status
     except Exception as e:
         logger.exception(e)
         raise e

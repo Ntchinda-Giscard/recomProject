@@ -32,21 +32,21 @@ class ConfigurationManager:
     
     def get_data_validation_configuration(self) -> DataValidationConfig:
 
-        config  = self.config.data_validation
-        schema = self.schema.COLUMNS
+        config  = self.config.data_validations
+        schema = self.schema
+
 
         create_directories([config.root_dir])
 
         data_validation_config = DataValidationConfig(
             all_schema= schema,
+            unzip_file_dir = {'movies': config.unzip_movies_dir, 'tags': config.unzip_tags_dir, 'ratings': config.unzip_ratigs_dir},
             root_dir= config.root_dir,
-            STATUS_FILE= config.STATUS_FILE,
-            unzip_file_dir=config.unzip_file_dir
+            STATUS_FILE= config.STATUS_FILE
         )
 
+
         return data_validation_config
-    
-    def get_data_transformation_config(self) -> DataTransformationConfig:
 
         config  = self.config.data_transformation
 

@@ -9,10 +9,9 @@ class DataIngestionConfig:
     local_data_file: Path
     unsizp_dir: Path
 
-@dataclass(frozen=True)
 class DataValidationConfig:
     root_dir: str
-    unzip_file_dir: str
+    unzip_file_dir: dict
     STATUS_FILE: str
     all_schema: dict
 
