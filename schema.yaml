@@ -1,12 +1,36 @@
-COLUMNS:
-  id: int64
-  title: object
-  genre: object
-  original_language: object
-  overview: object
-  popularity: float64
-  release_date: object
-  vote_count: int64
+# COLUMNS:
+#   id: int64
+#   title: object
+#   genre: object
+#   original_language: object
+#   overview: object
+#   popularity: float64
+#   release_date: object
+#   vote_count: int64
 
-TARGET_COLUMN:
-  name: vote_average
+# TARGET_COLUMN:
+#   name: vote_average
+
+
+movies:
+  columns:
+    - movieId
+    - title
+    -  genre
+
+ratings:
+  columns:
+    - userId
+    - rating
+    - timestamp
+    - movieId
+  rating_range:
+    min_value: 0.5
+    max_value: 5.0
+
+tags:
+  columns:
+    - userId
+    - timestamp
+    - tag
+    - movieId

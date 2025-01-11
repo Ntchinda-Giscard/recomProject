@@ -1047,3 +1047,18 @@ Connection: close
 Content-Type: application/zip
 
  ]
+[2025-01-11 09:24:56,597: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-11 09:24:56,611: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-11 09:24:56,701: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-11 09:24:56,759: INFO: 2712473069: Created directory at: artifacts]
+[2025-01-11 09:24:56,796: INFO: 2712473069: Created directory at: artifacts/data_validation]
+[2025-01-11 09:48:29,108: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-11 09:48:29,133: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-11 09:48:29,157: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-11 09:48:29,169: INFO: 2712473069: Created directory at: artifacts]
+[2025-01-11 09:48:29,425: INFO: 2712473069: Created directory at: artifacts/data_validation]
+[2025-01-11 09:49:34,387: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-11 09:49:34,403: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-11 09:49:34,433: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-11 09:49:34,447: INFO: 2712473069: Created directory at: artifacts]
+[2025-01-11 09:49:34,456: INFO: 2712473069: Created directory at: artifacts/data_validation]
