@@ -1,6 +1,6 @@
 from typing import Any
 from mlProject.config.configuration import ConfigurationManager
-from mlProject.components.data_validation import MoviesDataValidator
+from mlProject.components.data_validation import CSVDataValidator
 from mlProject import logger
 from zenml import step
 from pathlib import Path, PosixPath
@@ -26,8 +26,8 @@ class DataValidtionPipeline:
         """
         config = ConfigurationManager()
         data_validation_config = config.get_data_validation_configuration()
-        data_validation = DataValidation(config=data_validation_config)
-        status = MoviesDataValidator.validate_dataset()
+        data_validator = CSVDataValidator(config=data_validation_config)
+        status = data_validator.validate_dataset()
         return status
 
 @step(enable_cache=False)
