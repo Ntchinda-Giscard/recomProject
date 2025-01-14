@@ -18,7 +18,9 @@ class DataValidationConfig:
 @dataclass(frozen=True)
 class DataTransformationConfig:
     root_dir: Path
-    data_path: Path
+    movies: Path
+    ratings: Path
+    tags: Path
 
 @dataclass(frozen=True)
 class ModelTrainerConfig:

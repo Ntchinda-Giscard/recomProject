@@ -5,6 +5,36 @@ import pandas as pd
 from mlProject import logger
 from typing import Tuple
 import pandas as pd
+from mlProject.base import FeatureExtractor
+from mlProject.config.configuration import ConfigurationManager
+
+
+
+class MovieFeatureExtractor(FeatureExtractor):
+    def process_data(self) -> pd.DataFrame:
+        pass
+
+
+class UserFeatureExtractor(FeatureExtractor):
+    def process_data(self) -> pd.DataFrame:
+        pass
+
+
+class DataProcessing:
+
+    def __int__(
+            self,
+            config:ConfigurationManager,
+            user_feature_extractor: UserFeatureExtractor,
+            movie_feature_extractor: MovieFeatureExtractor
+    ) -> None:
+        self.config = config
+        self.movie_feature_extractor = movie_feature_extractor
+        self.user_feature_extractor = user_feature_extractor
+
+
+
+
 
 
 class DataTransformation:

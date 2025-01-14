@@ -1094,3 +1094,965 @@ Content-Type: application/zip
 [2021-01-01 12:55:06,850: INFO: common: Yaml file : params.yaml loaded successfully]
 [2021-01-01 12:55:06,867: INFO: common: Yaml file : schema.yaml loaded successfully]
 [2021-01-01 12:55:06,874: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:21:48,573: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:22:05,597: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:22:07,053: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:22:07,165: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:22:07,173: INFO: common: Created directory at: artifacts/data_transformation]
+[2025-01-14 11:45:42,544: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:45:42,570: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:45:42,586: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:47:29,953: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:47:29,970: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:47:29,988: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:47:29,996: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:47:30,008: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:51:04,297: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:51:04,324: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:51:04,356: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:51:04,371: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:51:04,383: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:54:04,580: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:54:04,597: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:54:04,628: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:54:04,642: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:54:04,653: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:57:11,530: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:57:11,542: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:57:11,571: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:57:11,586: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:57:11,596: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:57:25,646: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:57:25,658: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:57:25,691: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:57:25,698: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:57:25,712: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:57:36,154: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:57:36,169: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:57:36,191: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:57:36,197: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:57:36,207: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:59:14,232: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:59:14,283: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:59:14,325: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:59:14,332: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:59:14,342: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 11:59:30,071: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 11:59:30,080: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 11:59:30,106: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 11:59:30,125: INFO: common: Created directory at: artifacts]
+[2025-01-14 11:59:30,132: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:00:17,539: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:00:17,559: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:00:17,604: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:00:17,624: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:00:17,630: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:05:28,090: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:05:28,117: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:05:28,194: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:05:28,217: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:05:28,224: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:05:38,469: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:05:38,479: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:05:38,495: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:05:38,500: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:05:38,506: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:07:30,378: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:07:30,387: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:07:30,411: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:07:30,439: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:07:30,443: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:08:21,324: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:08:21,342: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:08:21,370: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:08:21,379: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:08:21,385: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:23:07,659: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:23:07,687: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:23:07,714: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:23:07,721: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:23:07,728: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:24:58,952: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:24:58,982: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:24:59,006: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:24:59,014: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:24:59,023: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:25:25,278: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:25:25,302: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:25:25,325: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:25:25,339: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:25:25,347: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:40:22,184: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:40:22,223: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:40:22,244: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:40:22,254: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:40:22,265: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:40:58,593: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:40:58,604: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:40:58,621: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:40:58,629: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:40:58,636: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:41:31,194: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:41:31,224: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:41:31,256: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:41:31,264: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:41:31,268: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:44:28,585: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:44:28,635: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:44:28,659: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:44:28,666: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:44:28,674: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:45:54,045: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:45:54,058: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:45:54,075: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:45:54,083: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:45:54,088: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:46:23,704: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:46:23,716: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:46:23,735: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:46:23,744: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:46:23,759: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:46:39,133: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:46:39,148: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:46:39,172: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:46:39,177: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:46:39,189: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:47:18,879: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:47:18,889: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:47:18,908: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:47:18,915: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:47:18,920: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:47:51,999: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:47:52,034: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:47:52,052: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:47:52,061: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:47:52,067: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 12:48:32,205: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 12:48:32,213: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 12:48:32,234: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 12:48:32,242: INFO: common: Created directory at: artifacts]
+[2025-01-14 12:48:32,250: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 13:07:53,957: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 13:07:54,015: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 13:07:54,109: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 13:07:54,136: INFO: common: Created directory at: artifacts]
+[2025-01-14 13:07:54,146: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 13:09:14,461: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 13:09:14,496: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 13:09:14,529: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 13:09:14,548: INFO: common: Created directory at: artifacts]
+[2025-01-14 13:09:14,589: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 13:09:16,907: ERROR: 3167155154: movies schema validation error: column 'genres' not in DataFrameSchema {'movieId': <Schema Column(name=movieId, type=DataType(str))>, 'title': <Schema Column(name=title, type=DataType(str))>, 'genre': <Schema Column(name=genre, type=DataType(str))>}]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 85, in validate
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 83, in validate
+    check_obj = parser(check_obj, *args)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 511, in strict_filter_columns
+    raise SchemaError(
+pandera.errors.SchemaError: column 'genres' not in DataFrameSchema {'movieId': <Schema Column(name=movieId, type=DataType(str))>, 'title': <Schema Column(name=title, type=DataType(str))>, 'genre': <Schema Column(name=genre, type=DataType(str))>}
+[2025-01-14 13:09:20,947: ERROR: 3167155154: ratings schema validation error: expected series 'userId' to have type str:
+failure cases:
+         index  failure_case
+0            0             1
+1            1             1
+2            2             1
+3            3             1
+4            4             1
+...        ...           ...
+100831  100831           610
+100832  100832           610
+100833  100833           610
+100834  100834           610
+100835  100835           610
+
+[100836 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'userId' to have type str:
+failure cases:
+         index  failure_case
+0            0             1
+1            1             1
+2            2             1
+3            3             1
+4            4             1
+...        ...           ...
+100831  100831           610
+100832  100832           610
+100833  100833           610
+100834  100834           610
+100835  100835           610
+
+[100836 rows x 2 columns]
+[2025-01-14 13:09:21,276: ERROR: 3167155154: tags schema validation error: expected series 'userId' to have type str:
+failure cases:
+      index  failure_case
+0         0             2
+1         1             2
+2         2             2
+3         3             2
+4         4             2
+...     ...           ...
+3678   3678           606
+3679   3679           606
+3680   3680           610
+3681   3681           610
+3682   3682           610
+
+[3683 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'userId' to have type str:
+failure cases:
+      index  failure_case
+0         0             2
+1         1             2
+2         2             2
+3         3             2
+4         4             2
+...     ...           ...
+3678   3678           606
+3679   3679           606
+3680   3680           610
+3681   3681           610
+3682   3682           610
+
+[3683 rows x 2 columns]
+[2025-01-14 13:13:47,860: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 13:13:47,896: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 13:13:47,914: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 13:13:47,918: INFO: common: Created directory at: artifacts]
+[2025-01-14 13:13:47,922: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 13:13:48,000: ERROR: 3167155154: movies schema validation error: column 'genres' not in DataFrameSchema {'movieId': <Schema Column(name=movieId, type=DataType(str))>, 'title': <Schema Column(name=title, type=DataType(str))>, 'genre': <Schema Column(name=genre, type=DataType(str))>}]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 85, in validate
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 83, in validate
+    check_obj = parser(check_obj, *args)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 511, in strict_filter_columns
+    raise SchemaError(
+pandera.errors.SchemaError: column 'genres' not in DataFrameSchema {'movieId': <Schema Column(name=movieId, type=DataType(str))>, 'title': <Schema Column(name=title, type=DataType(str))>, 'genre': <Schema Column(name=genre, type=DataType(str))>}
+[2025-01-14 13:13:50,349: ERROR: 3167155154: ratings schema validation error: expected series 'userId' to have type str:
+failure cases:
+         index  failure_case
+0            0             1
+1            1             1
+2            2             1
+3            3             1
+4            4             1
+...        ...           ...
+100831  100831           610
+100832  100832           610
+100833  100833           610
+100834  100834           610
+100835  100835           610
+
+[100836 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'userId' to have type str:
+failure cases:
+         index  failure_case
+0            0             1
+1            1             1
+2            2             1
+3            3             1
+4            4             1
+...        ...           ...
+100831  100831           610
+100832  100832           610
+100833  100833           610
+100834  100834           610
+100835  100835           610
+
+[100836 rows x 2 columns]
+[2025-01-14 13:13:50,722: ERROR: 3167155154: tags schema validation error: expected series 'userId' to have type str:
+failure cases:
+      index  failure_case
+0         0             2
+1         1             2
+2         2             2
+3         3             2
+4         4             2
+...     ...           ...
+3678   3678           606
+3679   3679           606
+3680   3680           610
+3681   3681           610
+3682   3682           610
+
+[3683 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'userId' to have type str:
+failure cases:
+      index  failure_case
+0         0             2
+1         1             2
+2         2             2
+3         3             2
+4         4             2
+...     ...           ...
+3678   3678           606
+3679   3679           606
+3680   3680           610
+3681   3681           610
+3682   3682           610
+
+[3683 rows x 2 columns]
+[2025-01-14 13:17:04,713: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 13:17:04,721: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 13:17:04,741: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 13:17:04,751: INFO: common: Created directory at: artifacts]
+[2025-01-14 13:17:04,755: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 13:17:05,013: ERROR: 3167155154: movies schema validation error: expected series 'movieId' to have type str:
+failure cases:
+      index  failure_case
+0         0             1
+1         1             2
+2         2             3
+3         3             4
+4         4             5
+...     ...           ...
+9737   9737        193581
+9738   9738        193583
+9739   9739        193585
+9740   9740        193587
+9741   9741        193609
+
+[9742 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'movieId' to have type str:
+failure cases:
+      index  failure_case
+0         0             1
+1         1             2
+2         2             3
+3         3             4
+4         4             5
+...     ...           ...
+9737   9737        193581
+9738   9738        193583
+9739   9739        193585
+9740   9740        193587
+9741   9741        193609
+
+[9742 rows x 2 columns]
+[2025-01-14 13:17:07,604: ERROR: 3167155154: ratings schema validation error: expected series 'userId' to have type str:
+failure cases:
+         index  failure_case
+0            0             1
+1            1             1
+2            2             1
+3            3             1
+4            4             1
+...        ...           ...
+100831  100831           610
+100832  100832           610
+100833  100833           610
+100834  100834           610
+100835  100835           610
+
+[100836 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'userId' to have type str:
+failure cases:
+         index  failure_case
+0            0             1
+1            1             1
+2            2             1
+3            3             1
+4            4             1
+...        ...           ...
+100831  100831           610
+100832  100832           610
+100833  100833           610
+100834  100834           610
+100835  100835           610
+
+[100836 rows x 2 columns]
+[2025-01-14 13:17:08,018: ERROR: 3167155154: tags schema validation error: expected series 'userId' to have type str:
+failure cases:
+      index  failure_case
+0         0             2
+1         1             2
+2         2             2
+3         3             2
+4         4             2
+...     ...           ...
+3678   3678           606
+3679   3679           606
+3680   3680           610
+3681   3681           610
+3682   3682           610
+
+[3683 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/3167155154.py", line 19, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'userId' to have type str:
+failure cases:
+      index  failure_case
+0         0             2
+1         1             2
+2         2             2
+3         3             2
+4         4             2
+...     ...           ...
+3678   3678           606
+3679   3679           606
+3680   3680           610
+3681   3681           610
+3682   3682           610
+
+[3683 rows x 2 columns]
+[2025-01-14 16:25:54,899: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:25:54,926: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:25:54,950: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:25:54,968: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:25:54,978: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:26:29,770: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:26:29,783: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:26:29,817: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:26:29,826: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:26:29,833: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:26:40,232: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:26:40,274: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:26:40,298: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:26:40,309: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:26:40,324: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:26:54,450: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:26:54,459: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:26:54,486: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:26:54,501: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:26:54,525: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:27:05,671: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:27:05,680: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:27:05,698: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:27:05,707: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:27:05,722: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:27:38,793: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:27:38,806: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:27:38,823: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:27:38,832: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:27:38,836: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:33:44,838: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:33:44,860: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:33:44,888: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:33:44,894: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:33:44,905: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:34:50,791: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:34:50,798: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:34:50,822: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:34:50,840: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:34:50,849: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:34:51,089: INFO: 2865866238: movies validation passed]
+[2025-01-14 16:34:51,932: ERROR: 2865866238: ratings schema validation error: expected series 'timestamp' to have type str:
+failure cases:
+         index  failure_case
+0            0     964982703
+1            1     964981247
+2            2     964982224
+3            3     964983815
+4            4     964982931
+...        ...           ...
+100831  100831    1493848402
+100832  100832    1493850091
+100833  100833    1494273047
+100834  100834    1493846352
+100835  100835    1493846415
+
+[100836 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/2865866238.py", line 26, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'timestamp' to have type str:
+failure cases:
+         index  failure_case
+0            0     964982703
+1            1     964981247
+2            2     964982224
+3            3     964983815
+4            4     964982931
+...        ...           ...
+100831  100831    1493848402
+100832  100832    1493850091
+100833  100833    1494273047
+100834  100834    1493846352
+100835  100835    1493846415
+
+[100836 rows x 2 columns]
+[2025-01-14 16:34:52,070: ERROR: 2865866238: tags schema validation error: expected series 'timestamp' to have type str:
+failure cases:
+      index  failure_case
+0         0    1445714994
+1         1    1445714996
+2         2    1445714992
+3         3    1445715207
+4         4    1445715200
+...     ...           ...
+3678   3678    1171234019
+3679   3679    1173392334
+3680   3680    1493843984
+3681   3681    1493843978
+3682   3682    1493844270
+
+[3683 rows x 2 columns]]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_2041/2865866238.py", line 26, in validate
+    schema.validate(df)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 126, in validate
+    return self._validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/pandas/container.py", line 147, in _validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 104, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 182, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/container.py", line 217, in run_schema_component_checks
+    result = schema_component.validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/dataframe/components.py", line 149, in validate
+    return self.get_backend(check_obj).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 142, in validate
+    validate_column(check_obj, column_name)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 98, in validate_column
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/components.py", line 74, in validate_column
+    validated_check_obj = super(ColumnBackend, self).validate(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 77, in validate
+    error_handler = self.run_checks_and_handle_errors(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/backends/pandas/array.py", line 141, in run_checks_and_handle_errors
+    error_handler.collect_error(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/pandera/api/base/error_handler.py", line 54, in collect_error
+    raise schema_error from original_exc
+pandera.errors.SchemaError: expected series 'timestamp' to have type str:
+failure cases:
+      index  failure_case
+0         0    1445714994
+1         1    1445714996
+2         2    1445714992
+3         3    1445715207
+4         4    1445715200
+...     ...           ...
+3678   3678    1171234019
+3679   3679    1173392334
+3680   3680    1493843984
+3681   3681    1493843978
+3682   3682    1493844270
+
+[3683 rows x 2 columns]
+[2025-01-14 16:35:26,217: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:35:26,228: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:35:26,261: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:35:26,268: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:35:26,276: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:35:26,571: INFO: 2865866238: movies validation passed]
+[2025-01-14 16:35:26,967: INFO: 2865866238: ratings validation passed]
+[2025-01-14 16:35:27,237: INFO: 2865866238: tags validation passed]
+[2025-01-14 16:35:58,695: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:35:58,703: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:35:58,724: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:35:58,730: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:35:58,734: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:35:59,046: INFO: 2865866238: movies validation passed]
+[2025-01-14 16:35:59,397: INFO: 2865866238: ratings validation passed]
+[2025-01-14 16:47:37,854: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 16:47:37,874: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 16:47:37,908: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 16:47:37,922: INFO: common: Created directory at: artifacts]
+[2025-01-14 16:47:37,931: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 16:47:38,277: INFO: 2865866238: movies validation passed]
+[2025-01-14 16:47:38,709: INFO: 2865866238: ratings validation passed]
+[2025-01-14 20:38:08,456: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 20:38:08,522: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 20:38:08,563: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 20:38:08,591: INFO: common: Created directory at: artifacts]
+[2025-01-14 20:38:08,603: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 20:38:09,191: INFO: 2865866238: movies validation passed]
+[2025-01-14 20:38:09,971: INFO: 2865866238: ratings validation passed]
+[2025-01-14 21:56:01,802: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 21:56:01,859: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 21:56:01,987: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 21:56:02,003: INFO: common: Created directory at: artifacts]
+[2025-01-14 21:56:02,008: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 21:56:02,634: INFO: 2865866238: movies validation passed]
+[2025-01-14 21:56:03,318: INFO: 2865866238: ratings validation passed]
+[2025-01-14 22:05:08,187: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:05:08,207: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:05:08,242: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:05:08,252: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:05:08,267: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:05:09,072: INFO: 2047657000: movies validation passed]
+[2025-01-14 22:05:09,743: INFO: 2047657000: ratings validation passed]
+[2025-01-14 22:06:18,726: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:06:18,737: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:06:18,762: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:06:18,769: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:06:18,778: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:06:19,198: INFO: 2047657000: movies validation passed]
+[2025-01-14 22:06:19,837: INFO: 2047657000: ratings validation passed]
+[2025-01-14 22:06:20,258: INFO: 1193771097: Data range validation for 'ratings' failed.]
+[2025-01-14 22:06:20,451: INFO: 2047657000: tags validation passed]
+[2025-01-14 22:07:26,451: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:07:26,464: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:07:26,497: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:07:26,504: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:07:26,514: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:07:27,113: INFO: 2047657000: movies validation passed]
+[2025-01-14 22:07:28,251: INFO: 2047657000: ratings validation passed]
+[2025-01-14 22:07:28,918: INFO: 1193771097: Data range validation for 'ratings' failed.]
+[2025-01-14 22:07:29,357: INFO: 2047657000: tags validation passed]
+[2025-01-14 22:12:59,124: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:12:59,258: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:12:59,381: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:12:59,399: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:12:59,494: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:13:00,593: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:13:01,807: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:13:02,332: ERROR: 3880404119: 'Logger' object has no attribute 'infor']
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3880404119.py", line 24, in validate_dataset
+    range_validator.validate(df)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3926765306.py", line 26, in validate
+    logger.infor(f"Statuses of of run test {test_statuses} ")
+AttributeError: 'Logger' object has no attribute 'infor'. Did you mean: 'info'?
+[2025-01-14 22:13:02,426: ERROR: 1088312714: 'Logger' object has no attribute 'infor']
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/1088312714.py", line 5, in <module>
+    data_validator.validate_dataset()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3880404119.py", line 28, in validate_dataset
+    raise e
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3880404119.py", line 24, in validate_dataset
+    range_validator.validate(df)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3926765306.py", line 26, in validate
+    logger.infor(f"Statuses of of run test {test_statuses} ")
+AttributeError: 'Logger' object has no attribute 'infor'. Did you mean: 'info'?
+[2025-01-14 22:14:23,681: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:14:23,697: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:14:23,736: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:14:23,749: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:14:23,759: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:14:24,139: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:14:24,935: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:14:25,374: INFO: 3703779229: Statuses of of run test ['ERROR'] ]
+[2025-01-14 22:14:25,388: ERROR: 3880404119: name 'e' is not defined]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3880404119.py", line 24, in validate_dataset
+    range_validator.validate(df)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3703779229.py", line 31, in validate
+    logger.info(f"Data range validation for '{self.column_name}' failed because of {e}.")
+NameError: name 'e' is not defined
+[2025-01-14 22:14:25,412: ERROR: 1088312714: name 'e' is not defined]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/1088312714.py", line 5, in <module>
+    data_validator.validate_dataset()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3880404119.py", line 28, in validate_dataset
+    raise e
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3880404119.py", line 24, in validate_dataset
+    range_validator.validate(df)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1181/3703779229.py", line 31, in validate
+    logger.info(f"Data range validation for '{self.column_name}' failed because of {e}.")
+NameError: name 'e' is not defined
+[2025-01-14 22:15:29,660: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:15:29,700: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:15:29,727: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:15:29,738: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:15:29,743: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:15:29,893: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:15:30,171: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:15:30,321: INFO: 1105397407: Statuses of ran tests: ['ERROR'] ]
+[2025-01-14 22:15:30,327: INFO: 1105397407: Data range validation for 'ratings' failed.]
+[2025-01-14 22:15:30,421: INFO: 2929335959: Schema validation for tags  passed]
+[2025-01-14 22:16:11,799: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:16:11,816: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:16:11,839: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:16:11,846: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:16:11,851: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:16:12,036: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:16:12,325: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:16:12,708: INFO: 1105397407: Statuses of ran tests: ['ERROR'] ]
+[2025-01-14 22:16:12,726: INFO: 1105397407: Data range validation for 'ratings' failed.]
+[2025-01-14 22:16:13,053: INFO: 2929335959: Schema validation for tags  passed]
+[2025-01-14 22:16:20,280: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:16:20,293: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:16:20,341: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:16:20,353: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:16:20,367: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:16:20,743: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:16:21,126: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:16:21,453: INFO: 1105397407: Statuses of ran tests: ['ERROR'] ]
+[2025-01-14 22:16:21,466: INFO: 1105397407: Data range validation for 'ratings' failed.]
+[2025-01-14 22:16:21,614: INFO: 2929335959: Schema validation for tags  passed]
+[2025-01-14 22:17:00,166: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:17:00,179: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:17:00,202: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:17:00,213: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:17:00,220: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:17:00,572: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:17:01,048: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:17:01,252: INFO: 3466733426: Statuses of ran tests: {'tests': [{'name': 'Value Range', 'description': "Test failed with exceptions: Column ratings isn't present in data", 'status': 'ERROR', 'group': 'data_quality', 'parameters': {}}], 'summary': {'all_passed': False, 'total_tests': 1, 'success_tests': 0, 'failed_tests': 0, 'by_status': {'ERROR': 1}}} ]
+[2025-01-14 22:17:01,285: INFO: 3466733426: Data range validation for 'ratings' failed.]
+[2025-01-14 22:17:01,420: INFO: 2929335959: Schema validation for tags  passed]
+[2025-01-14 22:22:26,455: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-14 22:22:26,468: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-14 22:22:26,493: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-14 22:22:26,500: INFO: common: Created directory at: artifacts]
+[2025-01-14 22:22:26,506: INFO: common: Created directory at: artifacts/data_validation]
+[2025-01-14 22:22:26,887: INFO: 2929335959: Schema validation for movies  passed]
+[2025-01-14 22:22:27,122: INFO: 2929335959: Schema validation for ratings  passed]
+[2025-01-14 22:22:27,578: INFO: 855803853: Statuses of ran tests: {'tests': [{'name': 'Value Range', 'description': 'All values in the column **rating** are within range', 'status': 'SUCCESS', 'group': 'data_quality', 'parameters': None}], 'summary': {'all_passed': True, 'total_tests': 1, 'success_tests': 1, 'failed_tests': 0, 'by_status': {'SUCCESS': 1}}} ]
+[2025-01-14 22:22:27,584: INFO: 855803853: Data range validation for 'rating' passed.]
+[2025-01-14 22:22:27,659: INFO: 2929335959: Schema validation for tags  passed]

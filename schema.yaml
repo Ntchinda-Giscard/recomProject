@@ -14,23 +14,23 @@
 
 movies:
   columns:
-    - movieId
-    - title
-    -  genre
+    movieId: int
+    title: str
+    genres: str
 
 ratings:
   columns:
-    - userId
-    - rating
-    - timestamp
-    - movieId
+    userId: int
+    rating: float
+    timestamp: int
+    movieId: int
   rating_range:
     min_value: 0.5
     max_value: 5.0
 
 tags:
   columns:
-    - userId
-    - timestamp
-    - tag
-    - movieId
+    userId: int
+    timestamp: int
+    tag: str
+    movieId: int

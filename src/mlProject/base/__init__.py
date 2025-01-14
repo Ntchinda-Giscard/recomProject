@@ -17,11 +17,11 @@ class DataLoader(ABC):
 class DataValidator(ABC):
 
     @abstractmethod
-    def validate(self) -> Any:
+    def validate(self) -> bool:
         pass
 
-class DataProcessing(ABC):
+class FeatureExtractor(ABC):
 
     @abstractmethod
-    def processing(self) -> Any:
+    def process_data(self) -> pd.DataFrame:
         pass
