@@ -15,20 +15,17 @@ class DataValidtionPipeline:
         pass
 
     def main(self) -> bool:
-        """
-        This function is responsible for orchestrating the data validation pipeline.
+            """
+            Performs data validation on a dataset using the specified configuration.
 
-        Parameters:
-        self (DataValidtionPipeline): The instance of the DataValidtionPipeline class.
-
-        Returns:
-        Any: This function does not return any specific value. It is mainly used for orchestrating the data validation process.
-        """
-        config = ConfigurationManager()
-        data_validation_config = config.get_data_validation_configuration()
-        data_validator = CSVDataValidator(config=data_validation_config)
-        status = data_validator.validate_dataset()
-        return status
+            Returns:
+                bool: The status of the data validation process.
+            """
+            config = ConfigurationManager()
+            data_validation_config = config.get_data_validation_configuration()
+            data_validator = CSVDataValidator(config=data_validation_config)
+            status = data_validator.validate_dataset()
+            return status
 
 @step(enable_cache=False)
 def data_validation(data_path: PosixPath) -> bool:
@@ -36,7 +33,7 @@ def data_validation(data_path: PosixPath) -> bool:
         logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
         obj = DataValidtionPipeline()
         status = obj.main()
-        logger.info(f">>>> {STAGE_NAME} stage completed x=========x")
+        logger.info(f">>>> {STAGE_NAME} stage completed x=========x \n\n")
         return status
     except Exception as e:
         logger.exception(e)
