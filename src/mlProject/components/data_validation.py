@@ -6,6 +6,9 @@ from mlProject.base import DataValidator
 from typing import List, Dict
 from mlProject.base import DataValidator
 from mlProject.constant import TYPE_MAPPING
+from evidently.test_suite import TestSuite
+from evidently.tests import TestColumnQuantile
+from evidently.tests.data_quality_tests import TestValueRange
 
 
 class SchemaValidator(DataValidator):
@@ -29,29 +32,30 @@ class SchemaValidator(DataValidator):
             return False
 
 class DataRangeValidator(DataValidator):
-    def __init__(self, column_name: str, min_value: float, max_value: float):
-        self.column_name = column_name
+    def __init__(self, min_value: float, max_value: float):
+        self.column_name = 'rating'
         self.min_value = min_value
         self.max_value = max_value
 
+
     def validate(self, df: pd.DataFrame) -> bool:
         test_suite = TestSuite(tests=[
-            TestColumnValueRange(
-                column_name=self.column_name,
-                left=self.min_value,
-                right=self.max_value
+            TestValueRange(
+                column_name = self.column_name,
+                left = self.min_value,
+                right =self.max_value
             )
         ])
-        test_suite.run(current_data=df)
+        test_suite.run(reference_data=df, current_data=df)
         results = test_suite.as_dict()
-        test_status = results['tests'][0]['status']
-        if test_status == 'SUCCESS':
-            print(f"Data range validation for '{self.column_name}' passed.")
+        test_statuses = [test['status'] for test in results['tests']]
+        logger.info(f"Statuses of ran tests: {results} ")
+        if all(status == 'SUCCESS' for status in test_statuses):
+            logger.info(f"Data range validation for '{self.column_name}' passed.")
             return True
         else:
-            print(f"Data range validation for '{self.column_name}' failed.")
+            logger.info(f"Data range validation for '{self.column_name}' failed.")
             return False
-
 class MoviesDataValidator:
     def __init__(self, config: DataValidationConfig):
         self.schema = config.all_schema
