@@ -10,6 +10,7 @@ from mlProject.config.configuration import ConfigurationManager
 
 
 
+
 class MovieFeatureExtractor(FeatureExtractor):
     def process_data(self) -> pd.DataFrame:
         pass

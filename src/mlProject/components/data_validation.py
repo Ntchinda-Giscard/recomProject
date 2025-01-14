@@ -3,60 +3,29 @@ import pandera as pa
 import pandas as pd
 from pandera import Column, DataFrameSchema
 from mlProject.base import DataValidator
-from typing import List
-from evidently.test_suite import TestSuite
-from evidently.tests import TestColumnValueRange
+from typing import List, Dict
 from mlProject.base import DataValidator
+from mlProject.constant import TYPE_MAPPING
 
-
-# class DataValidation:
-
-#     def __init__(self, config: DataValidationConfig) -> None:
-        
-#         self.config = config
-    
-#     def validate_all_columns(self) -> Tuple[bool, pd.DataFrame]:
-
-#         try:
-#             validation_status = None
-#             data = pd.read_csv(self.config.unzip_file_dir)
-#             all_cols = list(data.columns)
-#             all_schema = self.config.all_schema.keys()
-
-#             for col in all_cols:
-#                 if col not in all_schema:
-#                     validation_status = True
-
-#                     with open(self.config.STATUS_FILE, 'w') as f:
-#                         f.write(f"validation status: {validation_status}")
-                
-#                 else:
-#                     validation_status = True
-#                     with open(self.config.STATUS_FILE, 'w') as f:
-#                         f.write(f"validation status: {validation_status}")
-            
-#             return validation_status, data
-
-#         except Exception as e:
-#             raise e
 
 class SchemaValidator(DataValidator):
 
-    def __init__(self, columns: List[str]) -> None:
+    def __init__(self, columns: Dict,  dataset_name: str) -> None:
         self.columns = columns
+        self. dataset_name =  dataset_name
 
-    def get_schema(self) -> DataFrameSchema:      
-        schema_dict = {col: Column(pa.String) for col in self.columns}
+    def get_schema(self) -> bool:      
+        schema_dict = {col: Column(TYPE_MAPPING[col_type]) for col, col_type in self.columns.items()}
         return DataFrameSchema(schema_dict, strict=True)
 
-    def validate(self, dataset_name: str, df: pd.DataFrame) -> bool:
-        schema = self.get_schema(dataset_name)
+    def validate(self, df: pd.DataFrame) -> bool:
+        schema = self.get_schema()
         try:
             schema.validate(df)
-            logger.info(f"{dataset_name} validation passed")
+            logger.info(f"Schema validation for {self.dataset_name}  passed")
             return True
         except pa.errors.SchemaError as e:
-            logger.exception(f"{dataset_name} schema validation error: {e}")
+            logger.exception(f"Schema validation for {self.dataset_name}   failed: {e}")
             return False
 
 class DataRangeValidator(DataValidator):
