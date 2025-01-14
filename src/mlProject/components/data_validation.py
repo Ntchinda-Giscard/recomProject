@@ -56,22 +56,30 @@ class DataRangeValidator(DataValidator):
         else:
             logger.info(f"Data range validation for '{self.column_name}' failed.")
             return False
-class MoviesDataValidator:
+
+            import pandas as pd
+
+class CSVDataValidator:
     def __init__(self, config: DataValidationConfig):
+        
         self.schema = config.all_schema
+        self.config = config
         
 
     def load_dataset(self, file_path: str) -> pd.DataFrame:
         return pd.read_csv(file_path)
 
-    def validate_dataset(self) -> bool:
+    def validate_dataset(self):
+
         try:
             for dataset_name in self.schema:
-                df = self.load_dataset(config.unzip_file_dir[dataset_name])
-                schema_validator = SchemaValidator(columns=config[dataset_name].columns)
-                if self.schema_validator(dataset_name, df):
+                df = self.load_dataset(self.config.unzip_file_dir[dataset_name])
+                schema_validator = SchemaValidator(columns=self.schema[dataset_name].columns, dataset_name=dataset_name)
+                if schema_validator.validate(df):
                     if dataset_name == 'ratings': 
-                        range_validator = DataRangeValidator(dataset_name, config[dataset_name].min_value, config[dataset_name].max_value)
+                        range_validator = DataRangeValidator(self.schema[dataset_name].rating_range.min_value, self.schema[dataset_name].rating_range.max_value)
                         range_validator.validate(df)
-        except Exception as e:
             return True
+        except Exception as e:
+            logger.exception(e)
+            raise e
