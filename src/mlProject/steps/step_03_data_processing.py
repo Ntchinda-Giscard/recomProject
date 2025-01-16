@@ -21,33 +21,22 @@ class DataTransformationPipeline:
             get_data_processing_config = config.get_data_processing_config()
             data_preprocessor = DataPreprocessor(config=get_data_processing_config)
             dataset = data_preprocessor.process_data()
+            X_tarin, X_test, y_train, y_test = data_preprocessor.train_test_spliting(dataset)
 
         except Exception as e:
             logger.exception(f"Oops😟! An error occured: {e} ")
             raise e
 
 @step(enable_cache=False)
-def data_processing(data_frame: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def data_processing(data_frame: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     try:
-        logger.info(f">>>> {STAGE_NAME} stage started...⏳ <<<<< ")
+        logger.info(f">>>> {STAGE_NAME} stage started 🏁🏁 <<<<< ")
         obj = DataTransformationPipeline()
-        train, test = obj.main()
+        X_tarin, X_test, y_train, y_test = obj.main()
         logger.info(f">>>> {STAGE_NAME} stage completed ✅")
-        return train, test
+        
+        return X_tarin, X_test, y_train, y_test
 
     except Exception as e:
         logger.exception(f"Oops😟! An error occured: {e} ")
-        raise e
-
-
-
-if __name__ =="__main__":
-    try:
-        logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
-        obj = DataTransformationPipeline()
-        obj.main()
-        logger.info(f">>>> {STAGE_NAME} stage completed \n\nx=========x")
-    
-    except Exception as e:
-        logger.exception(e)
         raise e
