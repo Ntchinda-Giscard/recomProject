@@ -36,5 +36,5 @@ def data_validation(data_path: PosixPath) -> bool:
         logger.info(f">>>> {STAGE_NAME} stage completed ✅x=========x")
         return status
     except Exception as e:
-        logger.exception(e)
+        logger.exception(f"Oops😟! An error occured: {e} ")
         raise e

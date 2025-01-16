@@ -10,7 +10,7 @@ class DataLoader(ABC):
         pass
 
     @abstractmethod
-    def extrat_zip_file(self) -> None:
+    def extract_zip_file(self) -> None:
         pass
 
 
