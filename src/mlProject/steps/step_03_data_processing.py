@@ -6,7 +6,7 @@ from zenml import step
 import pandas as pd
 from typing import Tuple
 
-STAGE_NAME = "Data Preprocessing"
+STAGE_NAME = "Data Processing"
 
 class DataProcessingPipeline:
 
@@ -28,9 +28,9 @@ class DataProcessingPipeline:
             raise e
 
 @step(enable_cache=False)
-def data_processing(data_frame: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def data_processing(validation_status: bool) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     try:
-        logger.info(f">>>> {STAGE_NAME} stage started 🏁🏁 <<<<< ")
+        logger.info(f">>>>3️⃣ {STAGE_NAME} stage started 🏁🏁 <<<<< ")
         obj = DataProcessingPipeline()
         X_tarin, X_test, y_train, y_test = obj.main()
         logger.info(f">>>> {STAGE_NAME} stage completed ✅")

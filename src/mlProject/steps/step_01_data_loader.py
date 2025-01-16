@@ -25,12 +25,12 @@ class DataingestionPipeline:
         return path
 
 @step(output_materializers = PosixPathMaterializer, enable_cache=False)
-def data_ingestion() -> PosixPath:
+def data_loader() -> PosixPath:
     try:
-        logger.info(f">>>>> Stage {STAGE_NAME} has started <<<<<")
+        logger.info(f">>>>>1️⃣ Stage {STAGE_NAME} has started 🏁🏁<<<<<")
         obj = DataingestionPipeline()
         path = obj.main()
-        logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
+        logger.info(f">>>>> Stage {STAGE_NAME} has completed ✅x=========x")
         return PosixPath(path)
     except Exception as e:
         pass
