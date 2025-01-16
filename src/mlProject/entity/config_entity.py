@@ -16,7 +16,7 @@ class DataValidationConfig:
     all_schema: dict
 
 @dataclass(frozen=True)
-class DataTransformationConfig:
+class DataProcessingConfig:
     root_dir: Path
     movies: Path
     ratings: Path

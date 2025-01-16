@@ -30,10 +30,10 @@ class DataValidtionPipeline:
 @step(enable_cache=False)
 def data_validation(data_path: PosixPath) -> bool:
     try:
-        logger.info(f">>>> {STAGE_NAME} stage started <<<<< ")
+        logger.info(f">>>> 1️⃣ {STAGE_NAME} stage started  <<<<< ")
         obj = DataValidtionPipeline()
         status = obj.main()
-        logger.info(f">>>> {STAGE_NAME} stage completed x=========x \n\n")
+        logger.info(f">>>> {STAGE_NAME} stage completed x=========x")
         return status
     except Exception as e:
         logger.exception(e)

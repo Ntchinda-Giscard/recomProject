@@ -1,4 +1,5 @@
 from pathlib import Path
+import pandera as pa
 
 CONFIG_FILE_PATH = Path("config/config.yaml")
 PARAMS_FILE_PATH = Path("params.yaml")

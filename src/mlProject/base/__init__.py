@@ -23,5 +23,5 @@ class DataValidator(ABC):
 class FeatureExtractor(ABC):
 
     @abstractmethod
-    def process_data(self) -> pd.DataFrame:
+    def generate_features(self) -> pd.DataFrame:
         pass

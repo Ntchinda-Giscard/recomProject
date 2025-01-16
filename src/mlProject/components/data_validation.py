@@ -25,10 +25,10 @@ class SchemaValidator(DataValidator):
         schema = self.get_schema()
         try:
             schema.validate(df)
-            logger.info(f"Schema validation for {self.dataset_name}  passed")
+            logger.info(f"Schema validation for {self.dataset_name}  passed ✅")
             return True
         except pa.errors.SchemaError as e:
-            logger.exception(f"Schema validation for {self.dataset_name}   failed: {e}")
+            logger.exception(f"Schema validation for {self.dataset_name} failed ❌: {e}")
             return False
 
 class DataRangeValidator(DataValidator):
@@ -49,15 +49,12 @@ class DataRangeValidator(DataValidator):
         test_suite.run(reference_data=df, current_data=df)
         results = test_suite.as_dict()
         test_statuses = [test['status'] for test in results['tests']]
-        logger.info(f"Statuses of ran tests: {results} ")
         if all(status == 'SUCCESS' for status in test_statuses):
-            logger.info(f"Data range validation for '{self.column_name}' passed.")
+            logger.info(f"Data range validation for '{self.column_name}' passed ✅.")
             return True
         else:
-            logger.info(f"Data range validation for '{self.column_name}' failed.")
+            logger.info(f"Data range validation for '{self.column_name}' failed ❌.")
             return False
-
-            import pandas as pd
 
 class CSVDataValidator:
     def __init__(self, config: DataValidationConfig):

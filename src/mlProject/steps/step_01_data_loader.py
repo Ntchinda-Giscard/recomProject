@@ -21,7 +21,7 @@ class DataingestionPipeline:
         data_injestion_config = config.get_data_ingestion_config()
         data_ingestion = MoviesDataLoader(config = data_injestion_config)
         data_ingestion.download_data()
-        path = data_ingestion.extrat_zip_file()
+        path = data_ingestion.extract_zip_file()
         return path
 
 @step(output_materializers = PosixPathMaterializer, enable_cache=False)
