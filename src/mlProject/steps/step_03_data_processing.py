@@ -8,7 +8,7 @@ from typing import Tuple
 
 STAGE_NAME = "Data Preprocessing"
 
-class DataTransformationPipeline:
+class DataProcessingPipeline:
 
     def __init__(self, validation: bool) -> None:
         self.validation = validation
@@ -31,10 +31,10 @@ class DataTransformationPipeline:
 def data_processing(data_frame: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     try:
         logger.info(f">>>> {STAGE_NAME} stage started 🏁🏁 <<<<< ")
-        obj = DataTransformationPipeline()
+        obj = DataProcessingPipeline()
         X_tarin, X_test, y_train, y_test = obj.main()
         logger.info(f">>>> {STAGE_NAME} stage completed ✅")
-        
+
         return X_tarin, X_test, y_train, y_test
 
     except Exception as e:
