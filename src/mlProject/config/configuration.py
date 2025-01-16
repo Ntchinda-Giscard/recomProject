@@ -1,6 +1,6 @@
 from mlProject.constants import *
 from mlProject.utils.common import read_yaml, create_directories
-from mlProject.entity.config_entity import (DataIngestionConfig, DataTransformationConfig,
+from mlProject.entity.config_entity import (DataIngestionConfig, DataProcessingConfig,
                                             DataValidationConfig, ModelEvaluationConfig, ModelTrainerConfig
                                             )
 
@@ -48,16 +48,20 @@ class ConfigurationManager:
 
         return data_validation_config
 
-        config  = self.config.data_transformation
+    def get_data_processing_config(self) -> DataProcessingConfig:
+
+        config  = self.config.data_processing
 
         create_directories([config.root_dir])
 
-        data_transformation_config = DataTransformationConfig(
-            data_path= config.data_path,
+        data_processing_config = DataProcessingConfig(
+            movies= config.movies,
+            tags= config.tags,
+            ratings= config.ratings,
             root_dir= config.root_dir
         )
 
-        return data_transformation_config
+        return data_processing_config
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
 
