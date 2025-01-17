@@ -140,7 +140,7 @@ class DataPreprocessor:
         logger.info(f"Extracting \033[36mUser features...⏳\033[0m")
         users_feature = self.user_feature_extractor.generate_features(self.config)
         logger.info(f"Extracting \033[36mUser features\033[0m \033[34mcompleted\033[0m ✅")
-        logger.info(f"Merging features with ratings...⏳")
+        logger.info(f"Merging features with \033[36mratings...⏳\033[0m")
         ratings_with_users = ratings_df.merge(users_feature, on='userId', how='left')
         final_dataset = ratings_with_users.merge(movies_features, on='userId', how='left')
         logger.info(f"Merging features with ratings \033[34mcompleted\033[0m ✅")
@@ -151,7 +151,7 @@ class DataPreprocessor:
     def train_test_spliting(self, dataset: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         X = dataset.drop(['rating', 'userId', 'movieId'], axis=1)
         y = dataset['rating']
-        logger.info(f"Spliting final dataset features...⏳")
+        logger.info(f"Spliting \033[36mfinal dataset features...⏳\033[0m")
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
         logger.info(f"Training set size: {X_train.shape}")
         logger.info(f"Testing set size: {X_test.shape}")
