@@ -10,7 +10,7 @@ from mlProject.steps.step_03_data_processing import data_processing
 def training_pipeline():
     data_path = data_loader()
     validation_status = data_validation(data_path=data_path)
-    # X_train, X_test, y_train, y_test = data_transformation(validation_status = validation_status)
+    X_train, X_test, y_train, y_test = data_processing(validation_status = validation_status)
     # model_trainer(train, test)
    
 

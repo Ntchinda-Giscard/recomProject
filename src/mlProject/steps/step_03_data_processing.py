@@ -31,7 +31,7 @@ class DataProcessingPipeline:
 def data_processing(validation_status: bool) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     try:
         logger.info(f">>>>3️⃣ {STAGE_NAME} stage started 🏁🏁 <<<<< ")
-        obj = DataProcessingPipeline()
+        obj = DataProcessingPipeline(validation_status)
         X_tarin, X_test, y_train, y_test = obj.main()
         logger.info(f">>>> {STAGE_NAME} stage completed ✅")
 
@@ -39,4 +39,3 @@ def data_processing(validation_status: bool) -> Tuple[pd.DataFrame, pd.DataFrame
 
     except Exception as e:
         logger.exception(f"Oops😟! An error occured: {e} ")
-        raise e
