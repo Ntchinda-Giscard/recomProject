@@ -40,7 +40,7 @@ class ConfigurationManager:
 
         data_validation_config = DataValidationConfig(
             all_schema= schema,
-            unzip_file_dir = {'movies': config.unzip_movies_dir, 'tags': config.unzip_tags_dir, 'ratings': config.unzip_ratigs_dir},
+            unzip_file_dir = {'movies': config.movies, 'tags': config.tags, 'ratings': config.ratings},
             root_dir= config.root_dir,
             STATUS_FILE= config.STATUS_FILE
         )

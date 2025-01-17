@@ -5,7 +5,8 @@ from pandera import Column, DataFrameSchema
 from mlProject.base import DataValidator
 from typing import List, Dict
 from mlProject.base import DataValidator
-from mlProject.constant import TYPE_MAPPING
+from mlProject.constants import TYPE_MAPPING
+from mlProject import logger
 from evidently.test_suite import TestSuite
 from evidently.tests import TestColumnQuantile
 from evidently.tests.data_quality_tests import TestValueRange
@@ -25,10 +26,10 @@ class SchemaValidator(DataValidator):
         schema = self.get_schema()
         try:
             schema.validate(df)
-            logger.info(f"Schema validation for {self.dataset_name}  passed ✅")
+            logger.info(f"Schema validation for \033[36m'{self.dataset_name}'\033[0m  \033[32mpassed\033[0m ✅")
             return True
         except pa.errors.SchemaError as e:
-            logger.exception(f"Schema validation for {self.dataset_name} failed ❌: {e}")
+            logger.exception(f"Schema validation for \033[36m'{self.dataset_name}'\033[0m \033[31mfailed\033[0m ❌: {e}")
             return False
 
 class DataRangeValidator(DataValidator):
@@ -50,10 +51,10 @@ class DataRangeValidator(DataValidator):
         results = test_suite.as_dict()
         test_statuses = [test['status'] for test in results['tests']]
         if all(status == 'SUCCESS' for status in test_statuses):
-            logger.info(f"Data range validation for '{self.column_name}' passed ✅.")
+            logger.info(f"Data range validation for \033[36m'{self.column_name}'\033[0m \033[32mpassed\033[0m ✅.")
             return True
         else:
-            logger.info(f"Data range validation for '{self.column_name}' failed ❌.")
+            logger.info(f"Data range validation for \033[36m'{self.column_name}'\033[0m \033[31mfailed\033[0m ❌.")
             return False
 
 class CSVDataValidator:
@@ -78,5 +79,4 @@ class CSVDataValidator:
                         range_validator.validate(df)
             return True
         except Exception as e:
-            logger.exception(e)
-            raise e
+            logger.exception(f"Oops😟! An error occured: {e} ")

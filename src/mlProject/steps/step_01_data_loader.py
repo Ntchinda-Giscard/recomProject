@@ -27,10 +27,10 @@ class DataingestionPipeline:
 @step(output_materializers = PosixPathMaterializer, enable_cache=False)
 def data_loader() -> PosixPath:
     try:
-        logger.info(f"\33[33m >>>>> 1️⃣ Stage {STAGE_NAME} has started 🏁🏁 <<<<<\33[0m")
+        logger.info(f"\33[33m >>>>> 1️⃣ {STAGE_NAME} has started 🏁🏁 <<<<<\33[0m")
         obj = DataingestionPipeline()
         path = obj.main()
-        logger.info(f"\33[33m>>>>> Stage {STAGE_NAME} has completed ✅x=========x\33[0m")
+        logger.info(f"\33[33m>>>>> {STAGE_NAME} has completed ✅x=========x\33[0m")
         return PosixPath(path)
     except Exception as e:
         logger.exception(f"Oops😟! An error occured: {e} ")

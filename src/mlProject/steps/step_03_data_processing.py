@@ -1,5 +1,5 @@
 from pathlib import Path
-from mlProject.components.data_transformation import DataTransformation
+from mlProject.components.data_processing import DataPreprocessor
 from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
 from zenml import step
@@ -13,15 +13,15 @@ class DataProcessingPipeline:
     def __init__(self, validation: bool) -> None:
         self.validation = validation
 
-    def main(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        
+    def main(self) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+
 
         try:
             config = ConfigurationManager()
             get_data_processing_config = config.get_data_processing_config()
             data_preprocessor = DataPreprocessor(config=get_data_processing_config)
             dataset = data_preprocessor.process_data()
-            X_tarin, X_test, y_train, y_test = data_preprocessor.train_test_spliting(dataset)
+            X_train, X_test, y_train, y_test = data_preprocessor.train_test_spliting(dataset)
 
         except Exception as e:
             logger.exception(f"Oops😟! An error occured: {e} ")

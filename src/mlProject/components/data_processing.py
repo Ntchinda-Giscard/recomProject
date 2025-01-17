@@ -41,7 +41,7 @@ class MovieFeatureExtractor(FeatureExtractor):
         """
         return pd.read_csv(file_path)
 
-    def generate_features(self, movies_path: Path, tags_path: Path) -> pd.DataFrame:
+    def generate_features(self, config: DataProcessingConfig) -> pd.DataFrame:
         """
         Generates features from movie and tag data and returns them as a pandas DataFrame.
 
@@ -52,8 +52,8 @@ class MovieFeatureExtractor(FeatureExtractor):
         Returns:
             pd.DataFrame: The generated features as a pandas DataFrame.
         """
-        movies = self.load_dataset(movies_path)
-        tags = self.load_dataset(tags_path)
+        movies = self.load_dataset(config.movies)
+        tags = self.load_dataset(config.tags)
         movies['genres'] = movies['genres'].str.split('|')
         genre_set = set(genre for genres in movies['genres'] for genre in genres)
 
@@ -90,7 +90,7 @@ class UserFeatureExtractor(FeatureExtractor):
     def load_dataset(self, file_path: Path) -> pd.DataFrame:
         return pd.read_csv(file_path)
 
-    def generate_features(self, ratings_path: Path, movies_path: Path) -> pd.DataFrame:
+    def generate_features(self, config: DataProcessingConfig) -> pd.DataFrame:
         """
         Generates user features based on ratings and movies data.
 
@@ -100,10 +100,11 @@ class UserFeatureExtractor(FeatureExtractor):
 
         Returns:
             pd.DataFrame: DataFrame containing user features.
+            :param config:
 
         """
-        ratings = self.load_dataset(ratings_path)
-        movies = self.load_dataset(movies_path)
+        ratings = self.load_dataset(config.ratings)
+        movies = self.load_dataset(config.movies)
         user_ratings = ratings.groupby('userId')['rating'].agg(['mean', 'count']).reset_index()
         user_ratings.rename(columns={'mean': 'avg_rating', 'count': 'rating_count'}, inplace=True)
 
@@ -123,7 +124,7 @@ class UserFeatureExtractor(FeatureExtractor):
 
 
 class DataPreprocessor:
-    def __init__(self, config: DataTransformationConfig ) -> None:
+    def __init__(self, config: DataProcessingConfig ) -> None:
         self.movie_feature_extractor = MovieFeatureExtractor()
         self.user_feature_extractor = UserFeatureExtractor()
         self.config = config
@@ -134,14 +135,14 @@ class DataPreprocessor:
     def process_data(self) -> pd.DataFrame:
         ratings_df = self.load_dataset(self.config.ratings)
         logger.info(f"Extracting Movies features...⏳")
-        movies_featues = self.movie_feature_extractor.generate_features(self.config.movies, self.config.tags)
+        movies_features = self.movie_feature_extractor.generate_features(self.config)
         logger.info(f"Extracting Movies features completed ✅ ")
         logger.info(f"Extracting User features...⏳")
-        users_feature = self.user_feature_extractor.generate_features(self.config.ratings, self.config.movies)
+        users_feature = self.user_feature_extractor.generate_features(self.config.ratings)
         logger.info(f"Extracting User features completed ✅")
         logger.info(f"Merging features with ratings...⏳")
         ratings_with_users = ratings_df.merge(users_feature, on='userId', how='left')
-        final_dataset = ratings_with_users.merge(movies_featues, on='userId', how='left')
+        final_dataset = ratings_with_users.merge(movies_features, on='userId', how='left')
         logger.info(f"Merging features with ratings completed ✅")
         logger.info(f"Final dataset: {final_dataset.head()}")
 
@@ -151,10 +152,10 @@ class DataPreprocessor:
         X = dataset.drop(['rating', 'userId', 'movieId'], axis=1)
         y = dataset['rating']
 
-        X_tarin, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        logger.info(f"Training set size: {X_tarin.shape}")
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        logger.info(f"Training set size: {X_train.shape}")
         logger.info(f"Testing set size: {X_test.shape}")
 
-        return X_tarin, X_test, y_train, y_test
+        return X_train, X_test, y_train, y_test
 
 
