@@ -134,11 +134,11 @@ class DataPreprocessor:
     
     def process_data(self) -> pd.DataFrame:
         ratings_df = self.load_dataset(self.config.ratings)
-        logger.info(f"Extracting \033[36mMovies\033[0m features...⏳")
+        logger.info(f"Extracting \033[36mMovies features...⏳\033[0m")
         movies_features = self.movie_feature_extractor.generate_features(self.config)
         logger.info(f"Extracting \033[36mMovies features\033[0m \033[34mcompleted\033[0m ✅ ")
-        logger.info(f"Extracting \033[36mUser features...⏳")
-        users_feature = self.user_feature_extractor.generate_features(self.config.ratings)
+        logger.info(f"Extracting \033[36mUser features...⏳\033[0m")
+        users_feature = self.user_feature_extractor.generate_features(self.config)
         logger.info(f"Extracting \033[36mUser features\033[0m \033[34mcompleted\033[0m ✅")
         logger.info(f"Merging features with ratings...⏳")
         ratings_with_users = ratings_df.merge(users_feature, on='userId', how='left')

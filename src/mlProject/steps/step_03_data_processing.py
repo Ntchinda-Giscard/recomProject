@@ -30,10 +30,10 @@ class DataProcessingPipeline:
 @step(enable_cache=False)
 def data_processing(validation_status: bool) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     try:
-        logger.info(f">>>>3️⃣ {STAGE_NAME} stage started 🏁🏁 <<<<< ")
+        logger.info(f"\33[33m>>>>3️⃣ {STAGE_NAME} step started 🏁🏁 <<<<< \33[0m")
         obj = DataProcessingPipeline(validation_status)
         X_tarin, X_test, y_train, y_test = obj.main()
-        logger.info(f">>>> {STAGE_NAME} stage completed ✅")
+        logger.info(f"\33[33m>>>> {STAGE_NAME} step completed ✅ x=========x\33[0m")
 
         return X_tarin, X_test, y_train, y_test
 
