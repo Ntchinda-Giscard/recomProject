@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.feature_extraction.text import TfidfVectorizer
 from pathlib import Path
+import numpy as np
 
 
 
@@ -168,7 +169,7 @@ class DataPreprocessor:
         X_user, X_movie, y, _, _ = self.prepare_training_data(self.ratings_df, movie_features, user_features)
         logger.info(f"Merging features with ratings \033[34mcompleted\033[0m ✅")
 
-        return final_dataset
+        return X_user, X_movie, y
 
     def train_validation_split(self, X_user, X_movie, y) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
         train_size = 0.8
@@ -182,8 +183,8 @@ class DataPreprocessor:
         val_user_features = X_user[val_indices]
         val_movie_features = X_movie[val_indices]
         val_ratings = y[val_indices]
-        logger.info(f"Training set size: y_train = {train_ratings}, X_train_user = {train_user_features.shape}, X_train_movie = {train_movie_features.shape}")
-        logger.info(f"Validation set size: y_val = {val_ratings}, X_val_user = {val_user_features.shape}, X_val_movie = {val_movie_features.shape}")
+        logger.info(f"Training set size: y_train = {train_ratings.shape}, X_train_user = {train_user_features.shape}, X_train_movie = {train_movie_features.shape}")
+        logger.info(f"Validation set size: y_val = {val_ratings.shape}, X_val_user = {val_user_features.shape}, X_val_movie = {val_movie_features.shape}")
         logger.info(f"Spliting \033[36mfinal dataset\033[0m \033[34mcompleted\033[0m ✅")
 
         return train_user_features, train_movie_features, train_ratings, val_user_features, val_movie_features, val_ratings
