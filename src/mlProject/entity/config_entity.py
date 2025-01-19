@@ -25,13 +25,11 @@ class DataProcessingConfig:
 
 @dataclass(frozen=True)
 class ModelTrainerConfig:
-    root_dir: Path
-    train_data_path: Path
-    test_data_path: Path
+    learning_rate: float
     model_name: str
-    alpha: float
-    l1_ratio: float
-    target_column: str
+    validation_split: str
+    batch_size: int
+    epochs: int
 
 @dataclass(frozen=True)
 class ModelEvaluationConfig:
