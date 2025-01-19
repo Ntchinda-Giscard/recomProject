@@ -5,7 +5,7 @@ from mlProject import logger
 from zenml import step
 from pathlib import Path, PosixPath
 import pandas as pd
-from typing import Tuple
+from typing import Tuple, Annotated
 
 STAGE_NAME="Data validation"
 
@@ -28,7 +28,7 @@ class DataValidtionPipeline:
             return status
 
 @step(enable_cache=False)
-def data_validation(data_path: PosixPath) -> bool:
+def data_validation(data_path: PosixPath) -> Annotated[bool, "validation_state"]:
     try:
         logger.info(f"\33[33m>>>> 2️⃣ {STAGE_NAME} step started 🏁🏁 <<<<<\33[0m ")
         obj = DataValidtionPipeline()

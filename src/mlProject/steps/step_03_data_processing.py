@@ -4,7 +4,7 @@ from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
 from zenml import step
 import pandas as pd
-from typing import Tuple
+from typing import Tuple, Annotated
 import numpy as np
 
 STAGE_NAME = "Data Processing"
@@ -29,7 +29,14 @@ class DataProcessingPipeline:
             logger.exception(f"Oops😟! An error occured: {e} ")
 
 @step(enable_cache=False)
-def data_processing(validation_status: bool) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+def data_processing(validation_status: bool) -> 
+    Tuple[
+        Annotated[np.ndarray, "X_train_user"],
+        Annotated[np.ndarray, "X_train_movie"],
+        Annotated[np.ndarray, "y_train_rating"], 
+        Annotated[np.ndarray, "X_val_user"], 
+        Annotated[np.ndarray, "X_val_movie"], 
+        Annotated[np.ndarray, "y_val_rating"]]:
     try:
         logger.info(f"\33[33m>>>>3️⃣ {STAGE_NAME}🛠 step started 🏁🏁 <<<<< \33[0m")
         obj = DataProcessingPipeline(validation_status)
