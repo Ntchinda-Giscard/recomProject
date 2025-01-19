@@ -65,20 +65,16 @@ class ConfigurationManager:
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
 
-        config = self.config.model_trainer
-        params = self.params.ElasticNet
-        schema = self.schema.TARGET_COLUMN
+        config  = self.config.model_trainer
 
         create_directories([config.root_dir])
 
         model_trainer_config = ModelTrainerConfig(
-            root_dir = config.root_dir,
-            train_data_path = config.train_data_path,
-            test_data_path = config.test_data_path,
-            model_name = config.model_name,
-            alpha = params.alpha,
-            l1_ratio = params.l1_ratio,
-            target_column = schema.name
+            learning_rate = config.learning_rate,
+            validation_split = config.validation_split,
+            batch_size = config.batch_size,
+            epochs = config.epochs,
+            model_name = config.model_name
         )
 
         return model_trainer_config
