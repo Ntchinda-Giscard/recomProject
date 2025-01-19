@@ -27,7 +27,7 @@ data_processing:
 model_trainer:
   root_dir: artifacts/model_trainer
   model_name: model.h5
-  learnin_rate: 0.0001
+  learning_rate: 0.0001
   validation_split: 0.2
   batch_size: 32
   epochs: 1

@@ -29,8 +29,7 @@ class DataProcessingPipeline:
             logger.exception(f"Oops😟! An error occured: {e} ")
 
 @step(enable_cache=False)
-def data_processing(validation_status: bool) -> 
-    Tuple[
+def data_processing(validation_status: bool) -> Tuple[
         Annotated[np.ndarray, "X_train_user"],
         Annotated[np.ndarray, "X_train_movie"],
         Annotated[np.ndarray, "y_train_rating"], 

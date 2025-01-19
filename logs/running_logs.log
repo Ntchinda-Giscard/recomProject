@@ -3007,3 +3007,171 @@ NameError: name 'X_train_user' is not defined
 [2025-01-19 11:35:22,488: INFO: common: Yaml file : schema.yaml loaded successfully]
 [2025-01-19 11:35:22,497: INFO: common: Created directory at: artifacts]
 [2025-01-19 11:35:22,506: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:11:54,573: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:11:54,595: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:11:54,619: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:11:54,630: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:11:54,640: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:12:51,990: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:12:52,008: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:12:52,034: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:12:52,046: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:12:52,063: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:12:52,298: ERROR: 3450370567: Oops😟! An error occured: can't set attribute 'output' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/3450370567.py", line 4, in <module>
+    model_trainer = RecommenderTrainer(config=config, user_shape=user_vector_size, movie_shape=movie_vector_size)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/664176031.py", line 11, in __init__
+    self.model = RecommenderNet(user_shape, movie_shape)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/555296428.py", line 24, in __init__
+    self.output = tf.keras.layers.Dot(axes=1)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/layers/layer.py", line 1449, in __setattr__
+    return super().__setattr__(name, value)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/backend/tensorflow/trackable.py", line 28, in __setattr__
+    super().__setattr__(name, value)
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/tensorflow/python/trackable/autotrackable.py", line 70, in __setattr__
+    super(AutoTrackable, self).__setattr__(name, value)
+AttributeError: can't set attribute 'output'
+[2025-01-19 15:15:42,202: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:15:42,230: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:15:42,276: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:15:42,286: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:15:42,291: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:15:42,578: ERROR: 3450370567: Oops😟! An error occured: 'ConfigurationManager' object has no attribute 'learning_rate' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/3450370567.py", line 4, in <module>
+    model_trainer = RecommenderTrainer(config=config, user_shape=user_vector_size, movie_shape=movie_vector_size)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/664176031.py", line 12, in __init__
+    self.learning_rate = config.learning_rate
+AttributeError: 'ConfigurationManager' object has no attribute 'learning_rate'
+[2025-01-19 15:16:27,816: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:16:27,827: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:16:27,855: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:16:27,862: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:16:27,869: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:16:27,875: ERROR: 3450370567: Oops😟! An error occured: ModelTrainerConfig.__init__() got an unexpected keyword argument 'learning_rate' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/3450370567.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/1022031312.py", line 20, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+TypeError: ModelTrainerConfig.__init__() got an unexpected keyword argument 'learning_rate'
+[2025-01-19 15:17:49,594: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:17:49,613: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:17:49,634: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:17:49,641: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:17:49,650: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:17:49,714: ERROR: 3450370567: Oops😟! An error occured: 'ConfigurationManager' object has no attribute 'learning_rate' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/3450370567.py", line 4, in <module>
+    model_trainer = RecommenderTrainer(config=config, user_shape=user_vector_size, movie_shape=movie_vector_size)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/664176031.py", line 12, in __init__
+    self.learning_rate = config.learning_rate
+AttributeError: 'ConfigurationManager' object has no attribute 'learning_rate'
+[2025-01-19 15:20:11,166: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:20:11,188: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:20:11,220: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:20:11,229: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:20:11,244: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:20:11,472: ERROR: 3450370567: Oops😟! An error occured: 'ConfigurationManager' object has no attribute 'learning_rate' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/3450370567.py", line 4, in <module>
+    model_trainer = RecommenderTrainer(config=config, user_shape=user_vector_size, movie_shape=movie_vector_size)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/664176031.py", line 12, in __init__
+    self.learning_rate = config.learning_rate
+AttributeError: 'ConfigurationManager' object has no attribute 'learning_rate'
+[2025-01-19 15:20:59,243: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:20:59,295: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:20:59,339: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:20:59,347: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:20:59,355: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:25:28,239: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:25:28,290: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:25:28,314: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:25:28,349: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:25:28,353: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:25:43,246: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:25:43,301: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:25:43,349: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:25:43,362: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:25:43,367: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:25:43,428: ERROR: 2881466058: Oops😟! An error occured: 'ConfigurationManager' object has no attribute 'learning_rate' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/2881466058.py", line 5, in <module>
+    model_trainer = RecommenderTrainer(config=config, user_shape=user_vector_size, movie_shape=movie_vector_size)
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/1372419061.py", line 13, in __init__
+    self.learning_rate = config.learning_rate
+AttributeError: 'ConfigurationManager' object has no attribute 'learning_rate'
+[2025-01-19 15:26:04,353: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:26:04,370: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:26:04,434: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:26:04,462: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:26:04,482: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:28:22,860: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:28:22,872: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:28:22,900: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:28:22,911: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:28:22,920: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:29:31,315: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:29:31,361: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:29:31,416: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:29:31,449: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:29:31,479: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:29:31,672: ERROR: 4053437171: Oops😟! An error occured: name 'trainer' is not defined ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/4053437171.py", line 12, in <module>
+    history = trainer.train(
+NameError: name 'trainer' is not defined
+[2025-01-19 15:29:47,712: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:29:47,724: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:29:47,752: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:29:47,790: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:29:47,802: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:29:49,225: ERROR: 29842285: Oops😟! An error occured: unsupported operand type(s) for -: 'float' and 'tuple' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/29842285.py", line 12, in <module>
+    history = model_trainer.train(
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/1372419061.py", line 39, in train
+    self.history = self.model.fit(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/trainers/data_adapters/array_slicing.py", line 497, in train_validation_split
+    split_at = int(math.floor(batch_dim * (1.0 - validation_split)))
+TypeError: unsupported operand type(s) for -: 'float' and 'tuple'
+[2025-01-19 15:31:35,628: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:31:35,642: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:31:35,682: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:31:35,693: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:31:35,700: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:31:35,903: ERROR: 29842285: Oops😟! An error occured: unsupported operand type(s) for -: 'float' and 'tuple' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/29842285.py", line 12, in <module>
+    history = model_trainer.train(
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/3456708816.py", line 39, in train
+    self.history = self.model.fit(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/trainers/data_adapters/array_slicing.py", line 497, in train_validation_split
+    split_at = int(math.floor(batch_dim * (1.0 - validation_split)))
+TypeError: unsupported operand type(s) for -: 'float' and 'tuple'
+[2025-01-19 15:32:12,676: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:32:12,690: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:32:12,713: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:32:12,719: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:32:12,728: INFO: common: Created directory at: artifacts/model_trainer]
+[2025-01-19 15:32:12,850: ERROR: 29842285: Oops😟! An error occured: unsupported operand type(s) for -: 'float' and 'tuple' ]
+Traceback (most recent call last):
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/29842285.py", line 12, in <module>
+    history = model_trainer.train(
+  File "/var/folders/jr/rjtkv32d2xx1q0q5z289kkh40000gp/T/ipykernel_1244/4224890688.py", line 39, in train
+    self.history = self.model.fit(
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/ntchindagiscard/Documents/end-end-mlflow/.venv/lib/python3.10/site-packages/keras/src/trainers/data_adapters/array_slicing.py", line 497, in train_validation_split
+    split_at = int(math.floor(batch_dim * (1.0 - validation_split)))
+TypeError: unsupported operand type(s) for -: 'float' and 'tuple'
+[2025-01-19 15:34:17,623: INFO: common: Yaml file : config/config.yaml loaded successfully]
+[2025-01-19 15:34:17,658: INFO: common: Yaml file : params.yaml loaded successfully]
+[2025-01-19 15:34:17,738: INFO: common: Yaml file : schema.yaml loaded successfully]
+[2025-01-19 15:34:17,746: INFO: common: Created directory at: artifacts]
+[2025-01-19 15:34:17,760: INFO: common: Created directory at: artifacts/model_trainer]
