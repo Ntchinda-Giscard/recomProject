@@ -28,11 +28,11 @@ class RecommenderNetMaterializer(BaseMaterializer):
     ASSOCIATED_ARTIFACT_TYPES = ("Model",)
 
     def handle_input(self, data_type):
-        model_path = os.path.join(self.artifact.uri, "recommend_model.h5")
+        model_path = os.path.join(self.artifact.uri, "recommend_model.keras")
         return tf.keras.models.load_model(model_path)
 
     def handle_return(self, model):
-        model_path = os.path.join(self.artifact.uri, "recommend_model.h5")
+        model_path = os.path.join(self.artifact.uri, "recommend_model.keras")
         model.save(model_path)
 
 

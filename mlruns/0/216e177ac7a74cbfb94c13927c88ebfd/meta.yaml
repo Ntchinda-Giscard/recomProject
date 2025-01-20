@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/216e177ac7a74cbfb94c13927c88ebfd/artifacts
+end_time: 1737400002599
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 216e177ac7a74cbfb94c13927c88ebfd
+run_name: upset-wasp-600
+run_uuid: 216e177ac7a74cbfb94c13927c88ebfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737400001089
+status: 4
+tags: []
+user_id: ntchindagiscard

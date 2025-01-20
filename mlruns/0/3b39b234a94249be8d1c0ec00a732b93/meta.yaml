@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ntchindagiscard/Documents/end-end-mlflow/mlruns/0/3b39b234a94249be8d1c0ec00a732b93/artifacts
+end_time: 1737400223045
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b39b234a94249be8d1c0ec00a732b93
+run_name: funny-colt-903
+run_uuid: 3b39b234a94249be8d1c0ec00a732b93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737400154235
+status: 3
+tags: []
+user_id: ntchindagiscard

@@ -7,8 +7,14 @@ from typing import Tuple, List
 import joblib
 from mlProject.entity.config_entity import ModelTrainerConfig
 from mlProject import logger
+from mlflow.models import validate_serving_input, convert_input_example_to_serving_input
+import mlflow
+import mlflow.keras
 
-
+# Custom layer for L2 normalization
+class L2NormalizationLayer(layers.Layer):
+    def call(self, inputs):
+        return tf.linalg.l2_normalize(inputs, axis=1)
 
 # model
 
@@ -31,22 +37,25 @@ class RecommenderNet(Model):
             tf.keras.layers.Dense(32, activation='relu'),
             tf.keras.layers.Dense(16)
         ])
-        
+        self.concat = tf.keras.layers.Concatenate()
+        self.l2_normalize = L2NormalizationLayer()
+
         # Combined layers
-        self.output_layer = tf.keras.layers.Dot(axes=1)
+        self.output_layer = tf.keras.layers.Dense(1)
         
     def call(self, inputs):
         user_input, movie_input = inputs
         
         # User tower
         vu = self.user_NN(user_input)
-        vu = tf.linalg.l2_normalize(vu, axis=1)
+        vu = self.l2_normalize(vu)
         
         # Movie tower
         vm = self.movie_NN(movie_input)
-        vm = tf.linalg.l2_normalize(vm, axis=1)
+        vm = self.l2_normalize(vm)
+        concat = self.concat([vm, vu])
         
-        return self.output_layer([vu, vm])
+        return self.output_layer(concat)
     
     def build_graph(self):
         """Create model graph for visualization"""
@@ -79,11 +88,13 @@ class RecommenderTrainer:
     def compile_model(self):
         """Compile the model with specified parameters"""
         optimizer = tf.keras.optimizers.Adam(learning_rate=self.learning_rate)
+        self.model = self.model.build_graph()  # Build the model graph for visualization
         self.model.compile(
             optimizer=optimizer,
             loss= self.cost_fn,
             metrics=['mae', 'mse']
         )
+        logger.info(f"Model summary: {self.model.summary()}")
         
     def train(
         self,
@@ -126,7 +137,8 @@ class RecommenderTrainer:
         """Save the model"""
         self.model.save(path)
     
-    @staticmethod
-    def load_model(path: str):
-        """Load a saved model"""
-        return tf.keras.models.load_model(path)
+    def log_model(self, model_uri, input_example):
+        """Log the model to MLflow"""
+        mlflow.keras.log_model(self.model, model_uri, input_example=input_example)
+        serving_input_example = convert_input_example_to_serving_input(input_example)
+        validate_serving_input(model_uri, serving_input_example)
