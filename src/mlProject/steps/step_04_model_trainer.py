@@ -43,8 +43,7 @@ class ModelTrainerPipeline:
             y,
             callbacks=callbacks
         )
-        input_example = {'X_user': X_user[:5], 'X_movie': X_movie[:5]}
-        # model_trainer.log_model("models:/recommender_net", input_example)
+        input_example = {'user_input': X_user[:5], 'movie_input': X_movie[:5]}
     
         return model, history
 
