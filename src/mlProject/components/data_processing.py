@@ -66,7 +66,7 @@ class DataPreprocessor:
         self.movies_df = pd.read_csv(self.config.movies)
         self.ratings_df = pd.read_csv(self.config.ratings)
         self.tags_df = pd.read_csv(self.config.tags)
-        self.top_5_users = self.ratings_df['userId'].value_counts().head(100).index
+        self.top_5_users = self.ratings_df['userId'].value_counts().head(200).index
         self.ratings_df = self.ratings_df[self.ratings_df['userId'].isin(self.top_5_users)]
         self.relevant_movies = self.ratings_df['movieId'].unique()
         self.movies_df = self.movies_df[self.movies_df['movieId'].isin(self.relevant_movies)]

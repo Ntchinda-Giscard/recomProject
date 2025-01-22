@@ -11,6 +11,8 @@ from tensorflow.keras.callbacks import History
 from mlProject.utils.materializers import HistoryMaterializer, RecommenderNetMaterializer
 from zenml.client import Client
 import mlflow
+from mlflow.models.signature import infer_signature
+
 
 STAGE_NAME = "Model trainer"
 experiment_tracker = Client().active_stack.experiment_tracker
@@ -43,7 +45,10 @@ class ModelTrainerPipeline:
             y,
             callbacks=callbacks
         )
-        input_example = {'user_input': X_user[:5], 'movie_input': X_movie[:5]}
+        input_example = {'user_input': tf.convert_to_tensor(X_user[:5]), 'movie_input': tf.convert_to_tensor(X_movie[:5])}
+        signature = infer_signature([tf.convert_to_tensor(X_user[:5]), tf.convert_to_tensor(X_movie[:5])], model.predict([tf.convert_to_tensor(X_user[:5]), tf.convert_to_tensor(X_movie[:5])]))
+
+        # mlflow.keras.log_model(model, "artifacts/model_trainer", input_example=input_example, signature=signature)
     
         return model, history
 
