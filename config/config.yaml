@@ -8,20 +8,20 @@ data_ingestion:
 
 data_validations:
   root_dir: artifacts/data_validation
-  movies: artifacts/data_ingestion/ml-latest-small/movies.csv 
-  ratings: artifacts/data_ingestion/ml-latest-small/ratings.csv 
-  tags: artifacts/data_ingestion/ml-latest-small/tags.csv 
+  movies: artifacts/data_ingestion/ml-latest-small/movies.csv
+  ratings: artifacts/data_ingestion/ml-latest-small/ratings.csv
+  tags: artifacts/data_ingestion/ml-latest-small/tags.csv
   STATUS_FILE: artifacts/data_validation/ml-latest-small/status.txt
 
 data_validation:
   root_dir: artifacts/data_validation
-  unzip_movies_dir: artifacts/data_ingestion/dataset.csv 
+  unzip_movies_dir: artifacts/data_ingestion/dataset.csv
   STATUS_FILE: artifacts/data_validation/status.txt
 
 data_processing:
   root_dir: artifacts/data_transformation
-  movies: artifacts/data_ingestion/ml-latest-small/movies.csv 
-  ratings: artifacts/data_ingestion/ml-latest-small/ratings.csv 
+  movies: artifacts/data_ingestion/ml-latest-small/movies.csv
+  ratings: artifacts/data_ingestion/ml-latest-small/ratings.csv
   tags: artifacts/data_ingestion/ml-latest-small/tags.csv
 
 model_trainer:
@@ -30,7 +30,7 @@ model_trainer:
   learning_rate: 0.0001
   validation_split: 0.2
   batch_size: 32
-  epochs: 1
+  epochs: 10
 
 model_evaluation:
   root_dir: artifacts/model_evaluation
