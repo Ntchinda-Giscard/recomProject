@@ -1,0 +1,6 @@
+mlflow==2.19.0
+cloudpickle==2.2.1
+end-to-end-mlflow-project==0.0.0
+numpy==1.26.4
+pandas==2.2.2
+tensorflow==2.16.2

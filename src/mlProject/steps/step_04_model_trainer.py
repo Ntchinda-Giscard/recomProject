@@ -1,7 +1,7 @@
 from mlProject.components.model_trainer import RecommenderNet, RecommenderTrainer
 from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
-from zenml import step
+from zenml import step, ArtifactConfig
 from typing import Tuple, Annotated
 import pandas as pd
 import numpy as np
@@ -12,7 +12,7 @@ from mlProject.utils.materializers import HistoryMaterializer, RecommenderNetMat
 from zenml.client import Client
 import mlflow
 from mlflow.models.signature import infer_signature
-
+from zenml.integrations.tensorflow.materializers.keras_materializer import KerasMaterializer
 
 STAGE_NAME = "Model trainer"
 experiment_tracker = Client().active_stack.experiment_tracker
@@ -24,7 +24,7 @@ class ModelTrainerPipeline:
         pass
 
     def main(self, training_data: Tuple[np.ndarray, np.ndarray, np.ndarray]) -> Tuple[
-        Annotated[Model, "recomend_model"],
+        Annotated[Model, "recommend_model"],
         Annotated[History, "model_history"]]:
         X_user, X_movie, y = training_data
         config = ConfigurationManager()
@@ -53,13 +53,13 @@ class ModelTrainerPipeline:
         return model, history
 
 @step(enable_cache=False, output_materializers={
-    "recomend_model": RecommenderNetMaterializer,
+    "recommend_model": KerasMaterializer,
     "model_history": HistoryMaterializer
 },
 experiment_tracker= "dagshub_mlflow_tracker"
 )
 def model_trainer(X_user: np.ndarray, X_movie: np.ndarray, y: np.ndarray) -> Tuple[
-        Annotated[Model, "recomend_model"],
+        Annotated[Model, "recommend_model"],
         Annotated[History, "model_history"]]:
     try:
         logger.info(f"\33[33m>>>>>4️⃣ {STAGE_NAME}🤖  step has started 🏁🏁<<<<<\33[0m")
@@ -71,19 +71,19 @@ def model_trainer(X_user: np.ndarray, X_movie: np.ndarray, y: np.ndarray) -> Tup
     except Exception as e:
         logger.exception(f"Oops😟! An error occured: {e} ")
 
-if __name__ == "__main__":
-    num_samples = 1000  # Number of samples
-    user_vector_size = 21  # Length of each user vector
-    movie_vector_size = 71  # Length of each movie vector
+# if __name__ == "__main__":
+#     num_samples = 1000  # Number of samples
+#     user_vector_size = 21  # Length of each user vector
+#     movie_vector_size = 71  # Length of each movie vector
 
-    # Generate random data
-    X_user = np.random.rand(num_samples, user_vector_size)  # Shape (10, 21)
-    X_movie = np.random.rand(num_samples, movie_vector_size)  # Shape (10, 71)
-    y = np.random.rand(num_samples)  # Shape (10, 1)
-    try:
-        logger.info(f">>>>> Stage {STAGE_NAME} has started <<<<<")
-        obj = ModelTrainerPipeline()
-        obj.main((X_user, X_movie, y))
-        logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
-    except Exception as e:
-        raise e
+#     # Generate random data
+#     X_user = np.random.rand(num_samples, user_vector_size)  # Shape (10, 21)
+#     X_movie = np.random.rand(num_samples, movie_vector_size)  # Shape (10, 71)
+#     y = np.random.rand(num_samples)  # Shape (10, 1)
+#     try:
+#         logger.info(f">>>>> Stage {STAGE_NAME} has started <<<<<")
+#         obj = ModelTrainerPipeline()
+#         obj.main((X_user, X_movie, y))
+#         logger.info(f">>>>> Stage {STAGE_NAME} has completed \n\n x=========x")
+#     except Exception as e:
+#         raise e
