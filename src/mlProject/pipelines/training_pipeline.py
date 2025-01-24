@@ -5,7 +5,7 @@ from mlProject.steps.step_02_data_validation import data_validation
 from mlProject.steps.step_03_data_processing import data_processing
 from mlProject.steps.step_04_model_trainer import model_trainer
 from mlProject.steps.step_05_model_evaluation import model_evaluation
-
+from mlProject.utils.common import get_datetime_suffix
 
 @pipeline
 def training_pipeline():
@@ -15,7 +15,7 @@ def training_pipeline():
     model, history = model_trainer(X_train_user, X_train_movie, y_train_rating)
     mlflow_register_model_step(
         model=model,
-        name=f"RecommendNet {type(model)}"
+        name=f"RecommendNet"
     )
     model_evaluation(
         X_val_user, X_val_movie, y_val_rating,

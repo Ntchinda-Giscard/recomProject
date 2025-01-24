@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 from box.exceptions import BoxValueError
 import yaml
@@ -148,3 +149,24 @@ def get_size(path: Path) -> str:
     size_in_kb = round(os.path.getsize(path)/1024)
 
     return f"~{size_in_kb} KB"
+
+
+def get_datetime_suffix() -> str:
+    """
+    Get the current datetime as a suffix for file names.
+
+    This function returns the current datetime as a string in the format "YYYYMMDD_HHMMSS".
+    It can be used as a suffix for file names to ensure uniqueness.
+
+    Returns:
+    str: The current datetime as a string in the format "YYYYMMDD_HHMMSS".
+    """
+    # Implementation of getting the current datetime suffix goes here
+
+    # Get the current date and time
+    current_time = datetime.now()
+
+    # Format the date and time
+    formatted_time = current_time.strftime("%Y_%m_%d-%H_%M_%S_%f")
+
+    return str(formatted_time)
