@@ -30,7 +30,6 @@ class RecommendModeEvaluator(ModelEvaluator):
         metrics = self.eval_metrics(X_user_val, X_movie_val, y_rating_val, model)
         mse = metrics[2]
         mae = metrics[1]
-
         hyperparameters = {
             "learning_rate": self.config.learning_rate,
             "validation_split": self.config.validation_split,
