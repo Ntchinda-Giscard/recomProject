@@ -11,8 +11,8 @@ def promote_to_bentoml(
     model: tf.keras.Model,
     X_user: np.ndarray, 
     X_movie: np.ndarray, 
-    y_rating: np.ndarray) -> Tag:  # Explicit return type
+    y_rating: np.ndarray) -> None:  # Explicit return type
 
     bentoml_model: Model = bentoml.tensorflow.save_model("RecommendNet", model)
     print(f"Tag oooo: {bentoml_model.tag}")
-    return bentoml_model.tag  # Returns a string like "zenml_promoted_model:latest"
+    

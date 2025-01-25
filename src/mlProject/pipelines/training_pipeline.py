@@ -30,10 +30,10 @@ def training_pipeline():
         model=model,
         name=f"RecommendNet"
     )
-    model_evaluation(
+    model = model_evaluation(
         X_val_user, X_val_movie, y_val_rating,
         model)
-    promote_to_bentoml(model,X_val_user, X_val_movie, y_val_rating)
+    promote_to_bentoml(model, X_val_user, X_val_movie, y_val_rating)
     
    
 
