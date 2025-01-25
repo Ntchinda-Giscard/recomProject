@@ -80,6 +80,10 @@ An end-to-end machine learning system for personalized movie recommendations, po
    ```bash
    pip install -r requirements.txt
    ```
+4. Connect to ZenMl server:
+   ```bash
+   zenml login "YOUR_SERVER_URL"
+   ```
 
 ### ZenML Stack Setup
 
@@ -115,7 +119,7 @@ zenml stack set my_stack
    ```bash
    bentoml cloud login \
        --api-token 'YOUR_API_TOKEN' \
-       --endpoint 'https://bensto-space.cloud.bentoml.com'
+       --endpoint 'YOUR_SERVER_URL'
 
    bentoml deploy --name recommend-system .
    ```
