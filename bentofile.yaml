@@ -1,0 +1,12 @@
+service: "src.mlProject.components.model_service:RecommenderService"
+labels:
+  stage: dev
+  project: recommender_system
+include:
+  - "src/**/*.py"
+python:
+  packages:
+  - tensorflow
+  - numpy
+docker:
+  python_version: 3.10.2

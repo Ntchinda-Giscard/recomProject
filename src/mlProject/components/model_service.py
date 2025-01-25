@@ -5,6 +5,7 @@ from typing import Annotated
 import tensorflow as tf
 
 SERVICE_NAME = "Recommnder-Service"
+MODEL_NAME = "RecommendNet"
 @bentoml.service(
     name=SERVICE_NAME
 )
@@ -20,6 +21,5 @@ class RecommenderService:
         X_user: Annotated[np.ndarray, DType("float32"), Shape((24,))],
         X_movie: Annotated[np.ndarray, DType("float32"), Shape((71,))]
     ) -> np.ndarray:
-        inp = np.expand_dims(inp, (0, 1))
-        output_tensor = await self.model(torch.tensor(inp))
-        return to_numpy(output_tensor)
+        output_tensor = await self.model.predict([X_user, X_movie])
+        return output_tensor
