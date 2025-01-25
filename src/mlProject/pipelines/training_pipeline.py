@@ -5,7 +5,7 @@ from mlProject.steps.step_02_data_validation import data_validation
 from mlProject.steps.step_03_data_processing import data_processing
 from mlProject.steps.step_04_model_trainer import model_trainer
 from mlProject.steps.step_05_model_evaluation import model_evaluation
-from mlProject.utils.common import get_datetime_suffix
+from mlProject.steps.step_06_model_promotion import promote_to_bentoml
 
 @pipeline
 def training_pipeline():
@@ -20,6 +20,7 @@ def training_pipeline():
     model_evaluation(
         X_val_user, X_val_movie, y_val_rating,
         model)
+    promote_to_bentoml()
     
    
 
