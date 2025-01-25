@@ -33,7 +33,7 @@ def training_pipeline():
     model_evaluation(
         X_val_user, X_val_movie, y_val_rating,
         model)
-    # promote_to_bentoml()
+    promote_to_bentoml(model)
     
    
 
