@@ -131,7 +131,3 @@ zenml stack set my_stack
 MIT License. See `LICENSE` for details.
 
 **Need Help?** Open an issue or contact [@Ntchinda-Giscard](https://github.com/Ntchinda-Giscard).
-
----
-
-This version balances technical clarity with readability while showcasing your MLOps rigor. Let me know if you’d like adjustments! 🚀
