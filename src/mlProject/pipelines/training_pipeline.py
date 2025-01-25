@@ -6,8 +6,21 @@ from mlProject.steps.step_03_data_processing import data_processing
 from mlProject.steps.step_04_model_trainer import model_trainer
 from mlProject.steps.step_05_model_evaluation import model_evaluation
 from mlProject.steps.step_06_model_promotion import promote_to_bentoml
+from zenml import Model
 
-@pipeline
+model = Model(
+    # The name uniquely identifies this model
+    # It usually represents the business use case
+    name="RecommendNet",
+    # The version specifies the version
+    # If None or an unseen version is specified, it will be created
+    # Otherwise, a version will be fetched.
+    # Some other properties may be specified
+    license="Apache 2.0",
+    description="A recommendation model trained on movie lens.",
+)
+
+@pipeline(model=model)
 def training_pipeline():
     data_path = data_loader()
     validation_status = data_validation(data_path=data_path)
@@ -20,7 +33,7 @@ def training_pipeline():
     model_evaluation(
         X_val_user, X_val_movie, y_val_rating,
         model)
-    promote_to_bentoml()
+    # promote_to_bentoml()
     
    
 

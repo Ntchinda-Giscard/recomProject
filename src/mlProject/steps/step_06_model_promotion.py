@@ -6,7 +6,9 @@ from bentoml._internal.models.model import Model
 
 @step(enable_cache=False)
 def promote_to_bentoml() -> None:  # Explicit return type
-    latest_model_version = client.get_latest_model_version(name="RecommendNet")
+    client = Client()
+    model_name = "RecommendNet"
+    model_version = client.get_model_version(model_name, "latest")
 
     print(f"Artifact {model_version}")
     # model = model_version.get_artifact("recommend_model").load()
